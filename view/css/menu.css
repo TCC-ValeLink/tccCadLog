@@ -1,0 +1,90 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;   
+    font-style: normal;
+}
+
+nav.menu_ltl
+{
+    width: 8rem;
+    height: 97rem;
+    border-left-style: 1px solid #fff;
+    box-shadow: 0px 0px 10px #EFECEC;
+    background-color: #004443;
+    position: fixed;       
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+nav.menu_ltl.expandir
+{
+    width: 32.2rem;
+}
+
+ul
+{
+    height: 100%;
+    list-style-type: none;
+    overflow: auto;
+}
+
+ul li.ativo
+{
+    background-color: #002828;
+}
+
+ul li.item-menu a
+{
+    border: none;  
+    border-radius: 8.1px;
+    margin-top: 8rem;
+    background-color: #004443;
+    cursor:pointer;
+    width: 30rem;
+    margin-left: -1.5rem;
+    float:left;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;     
+}
+
+ul li.item-menu a:hover 
+{
+    background-color: #002828;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    list-style-type: none;
+}
+
+ul li.item-menu a .txt-spam
+{
+    font-size: 2.7rem;
+    color:#fff;
+    margin-left: 2.2rem;
+       
+}
+
+.abre-fecha
+{
+    width: 100%;    
+    margin-left: 1.5rem;
+    margin-top: 5rem;
+}
+
+.abre-fecha > i
+{
+    cursor: pointer;
+    font-size: 4rem;
+    color: #fff;
+}
+
+ul li.item-menu a .img-menu > i
+{
+    color: #80A2A1;
+    font-size: 4rem;
+    margin-left: 1rem;
+}
+
+
+ 

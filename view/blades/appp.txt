@@ -1,0 +1,101 @@
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZnbTIFfvqwB9EUvj9M_5A853CaxD3SqM&loading=async&libraries=map,marker">
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+<?php 
+    include("../model/connect.php");
+    include("../view/cadastro.php");
+    include("../view/cadastro2.php");
+    include("../view/cadastro3.php");
+
+   $nome = $_POST["nome"];
+   $data_nascimento = $_POST["data"];
+
+    $sql1 = mysqli_query($connect, "INSERT INTO usuario(Nome, data_nascimento, RG, CPF, estado_civil, deficiencia, especifique, sexo, cidade, rua, bairro, numero, CEP, ponto_referencia, tempo_de_residencia, valor_de_residencia, tipo_de_residencia, telefone, telefone_contato, CAD, email, senha) VALUES ('".$_POST["nome"]."','".$_POST["data"]."','". $_POST["RG"]. "','" . $_POST['CPF'] . "','" . $_POST['Estado_civil'] . "','" . $_POST['deficiencia'] . "','" . $_POST['espec'] . "','" . $_POST['sex'] . $_POST["CID"]."','".$_POST["RUA"]."','".$_POST["BAI"]."','".$_POST["NUM"]."','".$_POST["CEP"]."','".$_POST["REF"]."','".$_POST["TEM"]."','".$_POST["VLR"]."','" .$_POST["TPR"] . "','". $_POST["CTT"]. "','" . $_POST[RCD]. "','" . $_POST["CAD"]. "','". $_POST["EMA"] . "','" . $_POST['SEN'] "')" );
+    header("location:../view/login.php");
+
+
+
+
+?>  
+
+
+
+
+<?php include("../model/connect.php"); ?>
+<?php 
+        
+session_start();
+if(isset($_POST['btnCadastro'])){
+
+header("Location: ../view/cadastro2.php");
+$_SESSION['nomeUsuario'] = $_POST['campo_nome_usuario'];
+$_SESSION['dataNasc'] = $_POST['campo_nasc_usuario'];
+$_SESSION['RG'] = $_POST['campo_RG'];
+$_SESSION['CPF'] = $_POST['campo_CPF'];
+$_SESSION['estadoCivil'] = $_POST['estado_civil'];
+$_SESSION['deficiencia'] = $_POST['def'];
+$_SESSION['especifique'] = $_POST['campo_especifique'];
+$_SESSION['genero'] = $_POST['genero'];
+
+}
+
+$_SESSION['cidadeUsuario'] = $_POST['campo_cidade_usuario'];
+$_SESSION['ruaUsuario'] = $_POST['campo_rua_usuario'];
+$_SESSION['bairroUsuario'] = $_POST['campo_bairro_usuario'];
+$_SESSION['numeroUsuario'] = $_POST['campo_numero_usuario'];
+$_SESSION['CEPUsuario'] = $_POST['campo_CEP_usuario'];
+$_SESSION['refUsuario'] = $_POST['campo_referencia'];
+$_SESSION['tresidencia'] = $_POST['campo_tempo_residencia'];
+$_SESSION['valorResidencia'] = $_POST['campo_valor'];
+$_SESSION['tipoResidencia'] = $_POST['campo_tipo_residencia'];
+
+
+
+$_SESSION['telefoneUsuario'] = $_POST['campo_telefone_contato'];
+$_SESSION['telefoneRecado'] = $_POST['campo_telefone_recado'];
+$_SESSION['CAD'] = $_POST['cad'];
+$_SESSION['emailUsuario'] = $_POST['campo_email_usuario'];
+$_SESSION['senhaUsuario'] = $_POST['campo_senha_usuario'];
+
+mysqli_fetch_array(mysqli_query($connect, "INSERT INTO usuario (email,senha,nome,RG,CPF,telefone,sexo,imagem,CEP,rua,bairro,cidade,numero,beneficios,tipo_de_residencia,tempo_de_residencia,valor_de_residencia,CAD,deficiencia,estado_civil,telefone_contato) VALUES ('". $_SESSION['emailUsuario'] ."','". $_SESSION['senhaUsuario'] ."','". $_SESSION['nomeUsuario'] ."','". $_SESSION['RG'] ."','". $_SESSION['CPF'] ."','". $_SESSION['telefoneUsuario'] ."','". $_SESSION['genero'] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."','". $_SESSION[''] ."')"))
+?>
+
+
+
+   $_SESSION['nomeUsuario'] = $_POST['nome'];
+   $_SESSION['dataNasc'] = $_POST['data'];
+   $_SESSION['RG'] = $_POST['RG'];
+   $_SESSION['CPF'] = $_POST['CPF'];
+   $_SESSION['estadoCivil'] = $_POST['Estado_civil'];
+   $_SESSION['deficiencia'] = $_POST['def'];
+   $_SESSION['especifique'] = $_POST['espec'];
+   $_SESSION['genero'] = $_POST['sex'];
+     $_SESSION['cidade'] = $_POST['CID'];
+   $_SESSION['rua'] = $_POST['RUA'];
+   $_SESSION['bairro'] = $_POST['BAI'];
+   $_SESSION['numero'] = $_POST['NUM'];
+   $_SESSION['CEP'] = $_POST['CEP'];
+   $_SESSION['referencia'] = $_POST['REF'];
+   $_SESSION['tempoRes'] = $_POST['TEM'];
+   $_SESSION['valorRes'] = $_POST['VLR'];
+   $_SESSION['tipoRes'] = $_POST['TPR'];
+
+////////////////////////////////////////////////////////////////////////////
+
+$_SESSION['nomeEmp'] = $_POST['nome'];
+$_SESSION['dataEmp'] = $_POST['data'];
+$_SESSION['AreaA'] = $_POST['AA'];
+$_SESSION['CNPJ'] = $_POST['CNPJ'];
+$_SESSION['email'] = $_POST['EMAIL'];
+$_SESSION['senha'] = $_POST['SEN'];
+$_SESSION['cidadeEmp'] = $_POST['CID'];
+$_SESSION['ruaEmp'] = $_POST['RUA'];
+$_SESSION['paisEmp'] = $_POST['PAI'];
+$_SESSION['Estados'] = $_POST['estados'];
+$_SESSION['numero'] = $_POST['NUM'];
+$_SESSION['bairro'] = $_POST['BAI'];
+$_SESSION['CEP'] = $_POST['CEP'];

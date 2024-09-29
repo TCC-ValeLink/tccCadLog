@@ -1,0 +1,131 @@
+#notid
+{
+    width: 60rem;
+    height: 42rem;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #EFECEC;
+    margin-left:68%;
+}
+
+.topnot
+{
+    width: 60rem;
+    height: 7rem;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #444444;
+}
+
+.icon_not   
+{
+    width: 4rem;
+    margin-left: 54rem;
+    margin-top: -8rem;
+}
+
+.pnot
+{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-top: 1rem;
+    margin-left: 33%;
+}
+
+.btn_mrr
+{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    width: 18rem;
+    height: 2.8rem;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #444444;
+    color: #01E581;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.btn_lim
+{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    width: 18rem;
+    height: 2.8rem;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #444444;
+    color: #ED0606;
+    margin-left: 18rem;
+    font-size: 1.5rem;
+}
+
+.card1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50rem;
+    height: 7rem;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #444444;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    text-align: justify;
+    cursor: pointer;
+    position:relative;
+}
+
+.card1::before
+{
+    position: absolute;
+    content: '';
+    top: 2.5rem;
+    left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #01E581;
+}
+
+.card1::after
+{
+    position: absolute;
+    content: '';
+    top: 1.7rem;
+    left: 18rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: #959595;
+}
+
+.icon img
+{
+    width: 5rem;
+    margin-top: 1rem;
+    margin-left: -7rem;
+}
+
+.content h2
+{
+    margin-left: 0rem;
+    margin-top: 1rem;
+}
+
+.content h3 
+{
+    margin-left: 8rem;
+    margin-top: -2.8rem;
+    color: #959595;
+}
+
+.content p
+{
+    margin-left: 0rem;
+    font-size: 1.5rem;
+}
+

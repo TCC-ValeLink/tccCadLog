@@ -1,0 +1,75 @@
+.topuser
+{
+    width: 70rem;
+    height: 42rem;
+    background-color: #fff;
+    margin-left: 50rem;
+    margin-top: 2rem;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+}
+
+.capauser
+{
+    width: 100%;
+}
+
+.perfiluser
+{
+    margin-top: -10rem;
+    margin-left: 2rem;
+}
+
+.perfilemp
+{
+    margin-top: -10rem;
+    margin-left: 2rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.nomeuser
+{
+    font-size: 4rem;
+    margin-left: 17rem;
+    margin-top: -5rem;
+}
+
+.funcaouser
+{
+    font-size: 2rem;
+    color: #696969;
+    margin-left: 22rem;
+    margin-top: -3.5rem;
+}
+
+.funcaoicon
+{
+    margin-top: -2rem;
+}
+
+.funcaoicon > i
+{
+    font-size: 3rem;
+    margin-left: 17rem;
+}
+
+.edituser
+{
+    margin-top: 2rem;
+}
+
+.edituser > i
+{
+    font-size: 2.5rem;
+    margin-left: 6rem;
+    color: #01E581;
+}
+
+.editusertxt
+{
+    font-size: 1.8rem;
+    color: #696969;
+    margin-left: 10rem;
+    margin-top: -3.5rem;
+}
