@@ -30,16 +30,20 @@ if (isset($_POST['campo_email']) || isset($_POST['campo_senha'])) {
          $tabela = 'empresa';
       }
 
-      $sql_code = "SELECT email, senha FROM $tabela WHERE email = '$email' AND senha = '$senha';";
+      $sql_code = "SELECT email_$tabela, senha_$tabela FROM $tabela WHERE email_$tabela = '$email' AND senha_$tabela = '$senha';";
 
       $sql_query = $connect->query($sql_code);
 
       if ($sql_query) {
          $qtd = $sql_query->num_rows;
 
-         if ($qtd == 1) {
+         if ($qtd == 1 && $tabela == 'usuario') {
             $user = $sql_query->fetch_assoc();
             header("Location: home.php");
+         }
+         else if($qtd == 1 && $tabela == 'empresa'){
+            $user = $sql_query->fetch_assoc();
+            header("Location: homeEmp.php");
          } else {
             echo "<div id='error_login' class='erro_login'><p>Falha ao logar</p></div>";
          }

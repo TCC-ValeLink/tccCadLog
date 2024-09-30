@@ -67,6 +67,7 @@ ul li.item-menu a .txt-spam
 
 .abre-fecha
 {
+    overflow: hidden;
     width: 100%;    
     margin-left: 1.5rem;
     margin-top: 5rem;
@@ -74,6 +75,7 @@ ul li.item-menu a .txt-spam
 
 .abre-fecha > i
 {
+    overflow: hidden;
     cursor: pointer;
     font-size: 4rem;
     color: #fff;

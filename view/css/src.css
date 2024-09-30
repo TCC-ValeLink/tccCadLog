@@ -167,3 +167,102 @@ ul {
     flex-flow:row;
     background-color: aqua;
 }
+
+/* Home empresa */
+.container-create-post{
+  width: 512px;
+  height: 223px;
+  max-height: fit-content;
+  background-color: #c8bebe;
+  position: absolute;
+  margin-left: 60rem;
+  margin-top: 10rem;
+  padding: 0.5rem;
+}
+
+.btnPost {
+  background-color: #01e581;
+  color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #8a8989;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 2rem;
+  margin-left: 200px;
+}
+.top-create-post{
+  width: 100%;
+  height: 20%;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.postar {
+  background-color: #01e581;
+  color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #8a8989;
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: center;
+  width: 9rem;
+  height: 2.5rem;
+  position: relative;
+}
+.conteudo-postagem{
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  font-size: small;
+  outline: none;
+  border-width: 0;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.midia-post{
+  height: 50%;
+  width: 50%;
+  position: relative;
+  margin-top: 80%;
+  cursor: pointer;
+}
+.hidden-input {
+  display: none; 
+}
+
+.nome-profile{
+  font-size: large;
+  margin-left: 1rem;
+}
+.btnClose{
+  margin-left: 70%;
+  background-color: #c8bebe;
+  outline: none;
+  border-width: 0;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-10px);
+}
+.custom-file-upload{
+  position: relative;
+  cursor: pointer;
+  background-color: lightgreen;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.footer-create-post{
+  width: 100%;
+  height: 15%;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #000;
+  justify-content: end;
+}
