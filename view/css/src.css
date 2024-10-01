@@ -109,7 +109,7 @@ ul {
   color: #8a8989;
 }
 
-/* Home */
+/* Home Empresa / (usuário?) */
 
 .center {
   width: 512px;
@@ -118,7 +118,7 @@ ul {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-left: 60rem;
+  margin-left: 63.5rem;
   position: relative;
 }
 
@@ -128,6 +128,7 @@ ul {
   display: block;
   position: relative;
   background-color: #fff;
+  padding: 10;
 }
 
 .foto-profile {
@@ -157,9 +158,13 @@ ul {
     height: 50px;
     display: flex;
     flex-flow:row;
-    background-color: aqua;
+    background-color: rgb(247, 247, 247);
     align-items: center; 
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+
 }
+
 .footer-post{
     width:100%;
     height: 50px;
@@ -167,17 +172,22 @@ ul {
     flex-flow:row;
     background-color: aqua;
 }
+.btnHeart{
+  height: 20px;
+  width: 20px;
+}
 
-/* Home empresa */
+/* Criar Post empresa */
 .container-create-post{
   width: 512px;
-  height: 223px;
-  max-height: fit-content;
-  background-color: #c8bebe;
+  height: fit-content;
+  background-color: #fff;
   position: absolute;
   margin-left: 60rem;
   margin-top: 10rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #8a8989;
 }
 
 .btnPost {
@@ -215,21 +225,22 @@ ul {
   position: relative;
 }
 .conteudo-postagem{
-  height: auto;
   width: 100%;
+  height: 200px;
   position: relative;
-  padding: 0;
   font-size: small;
   outline: none;
-  border-width: 0;
   margin-top: 1rem;
-  overflow: hidden;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  padding: 10px; 
+  resize: none; 
 }
 .midia-post{
   height: 50%;
   width: 50%;
+  margin-left: 80%;
   position: relative;
-  margin-top: 80%;
   cursor: pointer;
 }
 .hidden-input {
@@ -242,7 +253,7 @@ ul {
 }
 .btnClose{
   margin-left: 70%;
-  background-color: #c8bebe;
+  background-color: #fff;
   outline: none;
   border-width: 0;
   width: 25px;
@@ -263,6 +274,8 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #000;
+  background-color: #fff;
   justify-content: end;
+  align-items: center;
+  border-radius: 4px; 
 }

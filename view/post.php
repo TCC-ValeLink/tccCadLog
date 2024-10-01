@@ -30,7 +30,7 @@
 
         <div class="footer-create-post">
             <label for="file-upload" class="midia-post">
-                <i class="bi bi-image" style="color: lightgreen; font-size: 24px;"></i>
+                <i class="bi bi-image " style="color: lightgreen; font-size: 24px;"></i>
             </label>
             <input type="file" id="file-upload" class="hidden-input" name="arquivo">
             <button class='postar' nome='btnPostar' type='submit'>Postar</button>
@@ -57,5 +57,5 @@
     }
 </script>
 <?php include("blades/followemp.php") ?>
-<?php include("blades/menu.php") ?>
+<?php include("blades/menuEmp.php") ?>
 <?php include("blades/footercomp.php") ?>
