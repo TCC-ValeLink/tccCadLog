@@ -137,17 +137,24 @@ ul {
   border-radius: 50%;
   background-color: #000;
 }
-.btnFollow {
-  background-color: #01e581;
+.btnFollow, .btnCur {
   color: #fff;
-  border-radius: 10px;
+  border-radius: 7px;
   font-size: 1rem;
   align-items: center;
   text-align: center;
   width: 10rem;
   height: 2rem;
+  border: #8a8989 solid 1px;
+}
+.btnFollow{
+  background-color: #01e581;
   margin-left: 200px;
 }
+.btnCur{
+  background-color: #0c08ec;
+}
+
 .conteudo-post{
     height: auto;
     width: 100%;
@@ -162,7 +169,6 @@ ul {
     align-items: center; 
     padding-left: 0.5rem;
     padding-right: 1rem;
-
 }
 
 .footer-post{
@@ -171,10 +177,12 @@ ul {
     display: flex;
     flex-flow:row;
     background-color: aqua;
+    justify-content: end;
 }
-.btnHeart{
+.btnLike{
   height: 20px;
   width: 20px;
+  margin-right: 200px;
 }
 
 /* Criar Post empresa */
@@ -248,7 +256,7 @@ ul {
 }
 
 .nome-profile{
-  font-size: large;
+  font-size: small;
   margin-left: 1rem;
 }
 .btnClose{
