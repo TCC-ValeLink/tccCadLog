@@ -29,7 +29,7 @@
             class="conteudo-postagem"></textarea>
 
         <div class="footer-create-post">
-            <label for="file-upload" class="midia-post">
+            <label for="file-upload" class="midia-post-create">
                 <i class="bi bi-image " style="color: lightgreen; font-size: 24px;"></i>
             </label>
             <input type="file" id="file-upload" class="hidden-input" name="arquivo">
