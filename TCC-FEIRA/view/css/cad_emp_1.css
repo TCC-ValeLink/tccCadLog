@@ -1,0 +1,185 @@
+#linhacd1
+{
+    width: 15rem;
+    height: 1.1rem;
+    background-color: #00755C;
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -1rem;
+    border-radius: 20px;
+}
+
+#lblemp1
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblemp2
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -8.5rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblemp3
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: -1rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblemp4
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblemp5
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -1rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblemp6
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: 6rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblemp7
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -20.3rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+
+
+.inputnameemp
+{
+   margin-left: 66rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   margin-top: 7.5rem;
+}
+
+.inputdataemp
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-99%);   
+
+}
+
+.inputarea
+{
+   margin-left: 66rem;
+   width: 20.4rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   margin-top: 4rem;
+}
+
+.inputcnpj
+{
+   margin-left: 66rem;
+   width: 18rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(159%);   
+}
+
+.inputemailemp
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-399%);   
+}
+
+.inputsenemp
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(80%);   
+}
+
+.inputcsenemp
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(260%);   
+}
+
+
+.txt_bxemp2
+{
+    color: #ABABAB;
+    margin-left: 66rem;
+    font-size: 2.0rem;
+    margin-top: -2rem;
+}
+
+.btncdemp
+{
+    position: absolute;
+    width: 52.3rem;
+    height: 6.6rem;
+    margin-left: 80rem;
+    margin-top: 10rem;                 
+}

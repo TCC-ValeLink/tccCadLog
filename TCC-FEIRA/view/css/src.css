@@ -1,0 +1,340 @@
+.srcdiv {
+  width: 100%;
+  height: 12vh;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 10px #efecec;
+  margin-left: 0;
+  align-items: center;
+  display: flex;
+}
+
+.buscar-box {
+  width: 151rem;
+  height: 6rem;
+  border-radius: 10px;
+  background-color: rgb(0, 68, 67);
+  margin-left: 60rem;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  border: 1px solid #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.buscar-box .lupa-buscar {
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  cursor: pointer;
+}
+
+.buscar-box .lupa-buscar i {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.buscar-box .input-buscar {
+  position: absolute;
+  right: 4rem;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.buscar-box .input-buscar input {
+  background-color: #004443;
+  border: 0;
+  outline: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  width: 100%;
+}
+
+#src::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2.5rem;
+}
+
+ul {
+  list-style-type: none;
+  overflow: auto;
+  width: 100%;
+}
+
+.item-src {
+  margin-left: 35rem;
+  margin-top: 3rem;
+}
+
+.item-src.expandir {
+  width: 56.8rem;
+  height: 55rem;
+}
+
+.srcdiv .item-src spam {
+  background-color: #00755c;
+  width: 7rem;
+  height: 6.5rem;
+  border-radius: 25%;
+  list-style-type: none;
+  align-items: center;
+  margin-left: 22rem;
+  cursor: pointer;
+  display: flex;
+  float: left;
+}
+
+.srcdiv .item-src spam:hover {
+  background-color: #004443;
+  width: 7rem;
+  height: 6.5rem;
+  border-radius: 25%;
+  list-style-type: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.srcdiv .item-src .iconsrc {
+  margin-left: 3rem;
+}
+.srcdiv .item-src .iconsrc > i {
+  font-size: 4.1rem;
+  color: #fff;
+  margin-left: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.srcdiv .item-src .iconsrc > i:hover {
+  font-size: 4.1rem;
+  color: #8a8989;
+}
+
+/* Home Empresa / (usuário?) */
+
+.center {
+  width: 512px;
+  height: auto;
+  background-color: #9EC7AA;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 63.5rem;
+  position: relative;
+}
+
+
+.content-post {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+.top-post{
+  width:100%;
+  height: 50px;
+  display: flex;
+  flex-flow:row;
+  background-color: rgb(247, 247, 247);
+  align-items: center; 
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.foto-profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.data-post{
+  color: #8a8989;
+  size: small;
+  margin-left: 0.5rem;
+}
+.btnFollow, .btnCur {
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 2.5rem;
+  border: #8a8989 solid 1px;
+}
+.btnFollow{
+  background-color: #01e581;
+  margin-left: 20.8%;
+  position: fixed;
+}
+.btnCur{
+  margin-right: 0.8rem;
+  background-color: #2C6BDB;
+}
+
+
+.conteudo-post{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.5rem;
+} 
+.center-post{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #c8bebe;
+}
+.midia-post{
+  width: 90%;
+  position: relative;
+  background-color: #c8bebe;
+  overflow: hidden; 
+}
+
+.footer-post{
+    width:100%;
+    height: 40px;
+    display: flex;
+    flex-flow:row;
+    background-color: #fff;
+    justify-content: end;
+    align-items: center;
+}
+.btnLike, .btnClicado{
+  border: 0;
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  transform: translatex(-360px);
+  margin-top: -1rem;
+}
+
+.btnLike > i{
+  font-size: 2.5rem;
+}
+
+.btnLike:hover
+{
+  transition: all 0.3s ease;
+  color: #ff0000;
+}
+.btnClicado
+{
+
+  color: #ff0000;
+}
+
+/* Criar Post empresa */
+.container-create-post{
+  width: 512px;
+  height: fit-content;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 60rem;
+  margin-top: 10rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #8a8989;
+  display: none;
+}
+
+.btnPost {
+  background-color: #01e581;
+  color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #8a8989;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 2rem;
+  margin-left: 200px;
+}
+.top-create-post{
+  width: 100%;
+  height: 20%;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.postar {
+  background-color: #01e581;
+  color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #8a8989;
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: center;
+  width: 9rem;
+  height: 2.5rem;
+  position: relative;
+}
+.conteudo-postagem{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  font-size: small;
+  outline: none;
+  margin-top: 1rem;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  padding: 10px; 
+  resize: none; 
+}
+.midia-post-create{
+  height: 50%;
+  width: 50%;
+  margin-left: 80%;
+  position: relative;
+  cursor: pointer;
+}
+.hidden-input {
+  display: none; 
+}
+
+.nome-profile{
+  font-size: small;
+  margin-left: 1rem;
+  color: #282727;
+}
+
+.aPost
+{
+  text-decoration: none;
+  color: #000;
+}
+
+.btnClose{
+  margin-left: 70%;
+  background-color: #fff;
+  outline: none;
+  border-width: 0;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-10px);
+}
+.custom-file-upload{
+  position: relative;
+  cursor: pointer;
+  background-color: lightgreen;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.footer-create-post{
+  width: 100%;
+  height: 15%;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  justify-content: end;
+  align-items: center;
+  border-radius: 4px; 
+}

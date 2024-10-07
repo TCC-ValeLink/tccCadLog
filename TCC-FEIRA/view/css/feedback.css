@@ -1,0 +1,172 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;   
+    font-style: normal;
+}
+
+
+.body-feedback
+{
+    background-color: #9EC7AA;
+    width: 100%;
+    height: 83.2rem;
+    position: fixed;
+}
+
+.vagal
+{
+    width: 51.2rem;
+    height: 80rem;
+    border-radius: 1%;
+    background-color: #F7F7F8;
+    margin-left: 20rem;
+    margin-top: 1.5rem;
+    position: absolute;
+}
+
+.title
+{
+  font-size: 4rem;
+  margin-left: 6rem;
+  margin-top: 5rem;
+}
+
+.sub-title
+{
+  font-size: 2rem;
+  color: #696969;
+  margin-left: 6rem;
+}
+
+.img_aval
+{
+  width: 35rem;
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
+
+.feet
+{
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  margin-left: 6rem;
+}
+
+.header-feedback {
+    position:relative;
+    text-align:center;
+    color:#00755C;
+    margin-top: 13.9rem;
+    margin-right: 0rem;
+  }
+
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height:80px;
+    max-height:100px;
+  }
+
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+  .add_coment
+  {
+    background-color: #F7F7F8;
+    width: 95.6rem;
+    height: 53.5rem;
+    margin-left: 40%;
+    border-radius: 1%;
+    margin-top:1.5rem;
+    position: fixed;
+  }
+
+  .title-coment 
+  {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+
+  .add_coment textarea
+  {
+    width: 85.3rem;
+    height: 25.2rem;
+    border-radius: 1%;
+    background-color: #E9E9E9;
+    border: 0;
+    outline: 0;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    position: fixed;
+    font-size: 1.5rem;
+  }
+
+  .add_coment button
+  {
+    background-color:#01E581; 
+    color: #fff; 
+    border-radius:20px; 
+    font-size: 2.4rem; 
+    align-items: center; 
+    text-align: center;
+    display: flex;
+    margin-top: 35rem;
+    margin-left: 23rem;
+    width: 50rem;
+    height: 6.6rem;
+    border: 0;
+    box-shadow: 0px 0px 0px 1px #00aa60;
+  }
+
+  .add_coment .btn_feedback p
+  {
+    margin-left: 20rem;
+    margin-top: 1.5rem;
+  }
+
+  .add_coment .btn_feedback > i
+  {
+    font-size: 4rem;
+    margin-left: 15rem;
+  }

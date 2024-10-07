@@ -1,0 +1,264 @@
+#linhacd1
+{
+    width: 15rem;
+    height: 1.1rem;
+    background-color: #00755C;
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -1rem;
+    border-radius: 20px;
+}
+
+#lblcd1
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd2
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -8.5rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd3
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: -1rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd4
+{
+    margin-left: 85rem;
+    font-size: 2.2rem;
+    margin-top: -8rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd5
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -12rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd6
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: -3rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd7
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -8.3rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd8
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+.inputname
+{
+   margin-left: 66rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   margin-top: 7.5rem;
+}
+
+.inputdata
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-99%);   
+
+}
+
+.inputrg
+{
+   margin-left: 66rem;
+   width: 16.4rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   margin-top: 4rem;
+}
+
+.inputcpf
+{
+   margin-left: 85rem;
+   width: 18rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-99%);   
+}
+
+.inputcpf
+{
+   margin-left: 85rem;
+   width: 18rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-99%);   
+}
+
+.inputespec
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-99%);   
+}
+
+.cmbbxcd1
+{
+  width: 18.2rem;
+  height: 3.9rem;
+  border-radius: 5px;
+  border-color: rgba(0,0,0,0.3);
+  color: #444444; 
+  margin-left: 110rem;
+  transform: translateY(-200%);   
+  font-size: 2rem;
+}
+
+.cmbbxcd2
+{
+  width: 11.2rem;
+  height: 3.9rem;
+  border-radius: 5px;
+  border-color: rgba(0,0,0,0.3);
+  color: #444444; 
+  margin-left: 66rem;
+  margin-top: 1.5REM;
+  font-size: 2rem;
+}
+
+.radio
+{ 
+  margin-left: 66rem;
+  margin-top: 5rem;
+  width: 2rem;
+  height: 2rem; 
+}
+
+.radio2
+{ 
+  margin-left: 85rem;
+  transform: translateY(-150%);   
+  width: 2rem;
+  height: 2rem; 
+}
+
+.radio3
+{ 
+  margin-left: 106rem;
+  transform: translateY(-550%);   
+  margin-top: 5rem;
+  width: 2rem;
+  height: 2rem; 
+}
+
+.radio4
+{ 
+  margin-left: 120rem;
+  transform: translateY(-940%);   
+  margin-top: 5rem;
+  width: 2rem;
+  height: 2rem; 
+}
+
+.txt_rd   
+{
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.txt_rd2   
+{
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  transform: translateY(-100%);   
+}
+
+.txt_rd3  
+{
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  transform: translateY(-370%);   
+}
+
+.txt_rd4   
+{
+  font-size: 2rem;
+  margin-left: 123rem;
+  transform: translateY(-720%);   
+  width: 200px;
+}
+
+.txt_bx2
+{
+    color: #ABABAB;
+    margin-left: 66rem;
+    font-size: 2.0rem;
+    margin-top: -20rem;
+}
+
+.btncd
+{
+    position: absolute;
+    width: 52.3rem;
+    height: 6.6rem;
+    margin-left: 80rem;
+    margin-top: 1rem;                 
+}

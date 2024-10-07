@@ -1,0 +1,64 @@
+.fllw
+{
+    width: 41.4rem;
+    height: 41rem;
+    background-color: #fff;
+    position: fixed;
+    margin-left: 75%;
+    margin-top: 5rem;
+    border-radius: 3%;
+    border-bottom: #000;
+
+}
+
+.compfllw
+{
+    cursor: pointer;
+    margin-top: -1rem;
+}
+
+.compfllw a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.img-emp2
+{
+    width: 7rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#follow-line
+{
+    height: 3.8rem;
+    width: 0.3rem;
+    background-color: #01E581;
+    margin-left: 10rem;
+    margin-top: -5rem;
+    position: fixed;
+}
+
+.tipo-emp
+{
+    font-size: 1.4rem;
+    margin-left: 11rem;
+    margin-top: -5.2rem;
+}
+
+.nome-emp
+{
+    font-size: 1.4rem;
+    margin-left: 11rem;
+    margin-top: -1.2rem;
+    color: #444444;
+}
+
+#follow-line-horizon
+{
+    height: 0.1rem;
+    width: 100%;
+    background-color: rgba(168, 166, 166, 0.5);
+    position: relative;
+}

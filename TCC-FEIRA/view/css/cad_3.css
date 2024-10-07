@@ -1,0 +1,244 @@
+#linhacd2
+{
+    width: 30rem;
+    height: 1.1rem;
+    background-color: #00755C;
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -1rem;
+    border-radius: 20px;
+}
+
+#lblcd31
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd32
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -8.5rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd33
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: -1rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd34
+{
+    margin-left: 85rem;
+    font-size: 2.2rem;
+    margin-top: -4rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd35
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -7rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd36
+{
+    margin-left: 66rem;
+    font-size: 2.2rem;
+    margin-top: -4rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblcd37
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -15.3rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+
+#lblcd39
+{
+    margin-left: 110rem;
+    font-size: 2.2rem;
+    margin-top: -8rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+
+.inputctt
+{
+   margin-left: 66rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   margin-top: 7.5rem;
+}
+
+.inputrcd
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-99%);   
+
+}
+
+.inputnum2
+{
+   margin-left: 66rem;
+   width: 16.4rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(69%); 
+}
+
+.cmbbxcd3
+{
+   margin-left: 85rem;
+   width: 18rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;  
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-28%);   
+}
+
+.inputema
+{
+   margin-left: 110rem;
+   width: 18rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-100%);   
+}
+
+
+.inputsen
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-290%);   
+}
+
+.inputcsen
+{
+   margin-left: 110rem;
+   width: 37.1rem;
+   height: 3.9rem; 
+   font-size: 2rem;
+   text-align: left;
+   border-radius: 5px;
+   border-color: rgba(0,0,0,0.3);
+   color: #444444;
+   transform: translateY(-90%);   
+}
+
+
+.btncd2
+{
+    position: absolute;
+    width: 52.3rem;
+    height: 6.6rem;
+    margin-left: 80rem;
+    margin-top: 7rem;                 
+}
+
+.ck1
+{
+    margin-left: 68rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
+
+.ck2
+{
+    margin-left: 68rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
+
+.ck3
+{
+    margin-left: 68rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
+
+.ck4
+{
+    margin-left: 68rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
+
+.ck5 
+{
+    margin-left: 88rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin-top: -16rem;
+    
+}
+
+.ck6
+{
+    margin-left: 88rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
+
+.ck7
+{
+    margin-left: 88rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
