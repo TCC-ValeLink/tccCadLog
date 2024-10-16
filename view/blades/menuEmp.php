@@ -7,27 +7,19 @@
         </div>
         <ul>
             <li class="item-menu ativo">
-                <a href="perfil.php">
+                <a href="perfilPrivEmp.php">
                 <spam class="img-menu"><i class="bi bi-person"></i></spam>
                 <spam class="txt-spam">Perfil</spam>
                 </a>
             </li>
             
             <li class="item-menu">
-                <a href="home.php">
-                <spam class="img-menu"><i class="bi bi-buildings"></i></spam>
-                <spam class="txt-spam">Home</spam>
+                <a href="#">
+                <spam class="img-menu"><i class="bi bi-briefcase-fill"></i></spam>
+                <spam class="txt-spam">Curriculos</spam>
                 </a>
 
 
-            </li>
-            
-            <li class="item-menu">
-                <a href="./mapa.php">
-                    <spam class="img-menu"><i class="bi bi-geo-alt"></i></spam>
-                    <spam class="txt-spam">Mapa</spam>
-                </a>
-                
             </li>
             
             <li class="item-menu">
@@ -37,14 +29,6 @@
                 </a>
                 
 
-            </li>
-
-            <li class="item-menu">
-                <a href="feedback.php">
-                <spam class="img-menu"><i class="bi bi-chat-right-dots-fill"></i></spam>
-                <spam class="txt-spam">Feedback</spam>
-                </a>
-                
             </li>
         </ul>
 </nav>

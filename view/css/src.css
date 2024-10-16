@@ -113,16 +113,22 @@ ul {
 
 .center {
   width: 512px;
-  height: auto;
-  background-color: #c8bebe;
-  overflow: hidden;
+  height: fit-content;
+  background-color: #9EC7AA;
   display: flex;
   flex-direction: column;
   margin-left: 63.5rem;
   position: relative;
+
 }
-
-
+.a{
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
+}
+.a::-webkit-scrollbar{
+  display: none;
+}
 .content-post {
   width: 100%;
   height: auto;
@@ -130,16 +136,19 @@ ul {
   position: relative;
   background-color: #fff;
   margin-top: 2rem;
+  border-radius: 1%;
 }
 .top-post{
   width:100%;
   height: 50px;
   display: flex;
   flex-flow:row;
-  background-color: rgb(247, 247, 247);
+  background-color: #fff;
   align-items: center; 
   padding-left: 0.5rem;
   padding-right: 1rem;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
 }
 
 .foto-profile {
@@ -160,38 +169,41 @@ ul {
   align-items: center;
   text-align: center;
   width: 10rem;
-  height: 2rem;
+  height: 2.5rem;
   border: #8a8989 solid 1px;
 }
 .btnFollow{
   background-color: #01e581;
-  margin-left: 200px;
+  margin-left: 76%;
+  position: absolute;
 }
 .btnCur{
   margin-right: 0.8rem;
-  background-color: #0c08ec;
+  background-color: #2C6BDB;
 }
 
 
 .conteudo-post{
   height: auto;
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
   padding: 0.5rem;
 } 
 .center-post{
   display: flex;
-  justify-content: center;
-  width: 512px;
+  justify-content: start;
+  width: 100%;
   height: fit-content;
-  background-color: #00755c;
+  background-color: #c8bebe;
+
 }
 .midia-post{
-  width: 90%;
+  width: 100%;
   position: relative;
-  background-color: #0c08ec;
-  height: fit-content;
-  
+  background-color: #c8bebe;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
 }
 
 .footer-post{
@@ -199,14 +211,34 @@ ul {
     height: 40px;
     display: flex;
     flex-flow:row;
-    background-color: aqua;
+    background-color: #fff;
     justify-content: end;
     align-items: center;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%; 
 }
-.btnLike{
+.btnLike, .btnClicado{
+  border: 0;
+  background-color: #fff;
   height: 20px;
   width: 20px;
-  transform: translatex(-330px);
+  transform: translatex(-360px);
+  margin-top: -1rem;
+}
+
+.btnLike > i{
+  font-size: 2.5rem;
+}
+
+.btnLike:hover
+{
+  transition: all 0.3s ease;
+  color: #ff0000;
+}
+.btnClicado
+{
+
+  color: #ff0000;
 }
 
 /* Criar Post empresa */
@@ -220,6 +252,7 @@ ul {
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid #8a8989;
+  display: none;
 }
 
 .btnPost {
@@ -284,6 +317,13 @@ ul {
   margin-left: 1rem;
   color: #282727;
 }
+
+.aPost
+{
+  text-decoration: none;
+  color: #000;
+}
+
 .btnClose{
   margin-left: 70%;
   background-color: #fff;

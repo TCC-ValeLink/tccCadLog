@@ -1,8 +1,8 @@
 <?php include("../model/connect.php"); ?>
 <?php
-if(!isset($_SESSION)){
-    session_start();
- }
+if (!isset($_SESSION)) {
+   session_start();
+}
 
 if (isset($_POST['login'])) {
    if ($_POST['login'] === 'usuario') {
@@ -24,40 +24,35 @@ if (isset($_POST['campo_email']) || isset($_POST['campo_senha'])) {
       $email = mysqli_real_escape_string($connect, trim($_POST['campo_email']));
       $senha = mysqli_real_escape_string($connect, trim($_POST['campo_senha']));
 
-      if (isset($_SESSION['Usuario']) && $_SESSION['Usuario'] == '0') {
-         $tabela = 'usuario';
-      } else {
-         $tabela = 'empresa';
-      }
+      $tabela = ($_SESSION['Usuario'] == '0') ? 'usuario' : 'empresa';
 
-      $sql_code = "SELECT email_$tabela, senha_$tabela FROM $tabela WHERE email_$tabela = '$email' AND senha_$tabela = '$senha';";
+      $sql_code = "SELECT email_$tabela, senha_$tabela, cod_{$tabela} FROM $tabela WHERE email_$tabela = '$email' AND senha_$tabela = '$senha';";
 
       $sql_query = $connect->query($sql_code);
 
       if ($sql_query) {
          $qtd = $sql_query->num_rows;
 
-         if ($qtd == 1 && $tabela == 'usuario') {
+         if ($qtd == 1) {
             $user = $sql_query->fetch_assoc();
-            header("Location: home.php");
-         }
-         else if($qtd == 1 && $tabela == 'empresa'){
-            $user = $sql_query->fetch_assoc();
-            header("Location: homeEmp.php");
+            if ($tabela == 'usuario') {
+               $_SESSION["idUsuario"] = $user['cod_usuario'];
+               header("Location: home.php");
+            } else if ($tabela == 'empresa') {
+               $_SESSION["idEmpresa"] = $user['cod_empresa'];
+               header("Location: perfilPrivEmp.php");
+            }
          } else {
             echo "<div id='error_login' class='erro_login'><p>Falha ao logar</p></div>";
          }
       } else {
          echo "<div id='error_login' class='erro_login'><p>Erro na consulta: " . $connect->error . "</p></div>";
       }
-
    }
 }
 ?>
 <script>
-
    function hideErrorMessages(event) {
-
       const errorEmail = document.getElementById('error_email');
       const errorPassword = document.getElementById('error_senha');
       const errorLogin = document.getElementById('error_login');
