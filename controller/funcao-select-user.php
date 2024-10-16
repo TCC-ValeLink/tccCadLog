@@ -3,7 +3,7 @@ include("../model/connect.php");
 
 $inicio = 0;
 $limite = 1;
-$query = mysqli_query($connect, "SELECT foto_usuario, nome_usuario FROM usuario WHERE '6' = cod_usuario;");
+$query = mysqli_query($connect, "SELECT foto_usuario, nome_usuario FROM usuario WHERE '5' = cod_usuario;");
 while ($exibe = mysqli_fetch_array($query)) {
   echo "     
       <div class='topuser'>
