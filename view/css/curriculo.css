@@ -78,3 +78,18 @@ margin-left: 80%;
   position: absolute;
 }
 
+.btnCreateCur {
+  background-color: #01e581;
+  color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #8a8989;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 2rem;
+  margin-left: 105rem;
+  margin-top: 23rem;
+  position: absolute;
+}

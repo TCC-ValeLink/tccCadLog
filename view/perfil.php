@@ -1,9 +1,9 @@
 <?php include("blades/top.php") ?>
 <?php include("blades/src.php") ?>
 <div class="body-home">
-
+<button type="submit" class="btnCreateCur" onclick="funcaoCurriculo()">Criar currículo</button>
     <?php include("../controller/funcao-select-user.php") ?>
-    <button type="submit" class="btnPost" onclick="funcaoCurriculo()">Criar currículo</button>
+    
 
     <div id="container-create-curriculo" class="container-create-curriculo">
         <form action="../controller/create-curriculo.php" method="POST">
