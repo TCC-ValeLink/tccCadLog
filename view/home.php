@@ -6,6 +6,7 @@
 
 
     <?php Include("../controller/visual-post.php")?>
+    <?php Include("../controller/visualizando-resposta.php")?>
 
     </div>
 

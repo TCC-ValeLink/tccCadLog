@@ -3,13 +3,8 @@
 <div class="body-home">
     <div class="curriculo">
         <div class="compCurriculo">
-            <a href="">
-                <img src="../img/imageemp.png" class="img-curriculo2">
-                <div id="follow-line2"></div>
-                <p class="tipo-Curriculo">Area Atuante</p>
-                <p class="nome-Curriculo">Nome da Empresa</p>
-                <div id="follow-line-horizon"></div>
-            </a>
+        <?php Include("../controller/analisar-curriculo.php")?>
+        <?php Include("../controller/status-vagas.php")?>
         </div>
         <div class="compCurriculo">
             <a href="">

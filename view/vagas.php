@@ -1,6 +1,7 @@
 <?php Include("blades/top.php")?>
 <?php Include("blades/src.php")?>
     <div class="body-vagas">
+        
         <div class="vagal">
             <p class="title">Vagas</p>
             <p class="sub-title">Adicione uma palavra referente a area de sua busca</p>
