@@ -8,6 +8,15 @@
                 <img src="../img/feedback_aval.png" class="img_aval">
             </div>
             <p class="feet">Por favor avalie sua experiência</p>
+
+            <div class="emojis">
+                <i class="bi bi-emoji-grin-fill"></i>
+                <i class="bi bi-emoji-smile-fill"></i>
+                <i class="bi bi-emoji-neutral-fill"></i>
+                <i class="bi bi-emoji-frown-fill"></i>
+                <i class="bi bi-emoji-tear-fill"></i>
+            </div>
+
             <div class="header-feedback">    
                 <div>
                     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -17,7 +26,7 @@
                     </defs>
                     <g class="parallax">
                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 117, 92,0.9)" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(1, 229, 129  ,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(1, 229, 129  ,0.7)"/>
                     <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0, 193, 108, 0.5)" />
                     <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(158, 255, 48,0.3)" />
                     </g>
@@ -28,7 +37,7 @@
 
         <div class="add_coment">
             <p class="title-coment">Adicione um comentário:</p>
-            <textarea></textarea>
+            <textarea style="outline:none; resize:none; padding:1rem; overflow:hidden"></textarea>
             <button class="btn_feedback">
                 <p>Enviar</p> 
                 <i class="bi bi-arrow-right"></i>

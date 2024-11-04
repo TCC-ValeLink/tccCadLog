@@ -16,16 +16,12 @@
                     </a>
                 </div>
                 <div class='data-post'>$exibe[2], $exibe[3]</div>
-                <button type='submit' id='follow' value='0' function='' name='btnFollow'
-                    class='btnFollow'>Seguir</button>
             </div>
             <div class='conteudo-post'>$exibe[4]</div>
             <div class='center-post'>
             <div class='midia-post'><img src='../view/imgs/$exibe[5]' style='width: 50%; height=auto;'></div>
             </div>
             <div class='footer-post'>
-
-                <button type='submit' name='btnLike' id='like' value='0' onclick='mudarCor(this)' class='btnLike'><i class='bi bi-heart-fill'></i></button>
             </div>
         </div> <!-- Div content-post -->
     </div>  <!-- Div ccenter -->

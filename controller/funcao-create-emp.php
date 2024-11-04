@@ -49,7 +49,7 @@ if (mysqli_num_rows($resultado) > 0) {
     echo "Nenhum usuário encontrado.";
 }
 mysqli_free_result($resultado);
-header("Location: ../view/login.php");
+header(header: "Location: ../view/login.php");
 
 ?>
 

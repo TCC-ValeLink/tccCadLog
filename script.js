@@ -16,3 +16,16 @@ function showHide()
     }
 }
 
+document.getElementById("confirmar-senha").addEventListener("submit", function(event) {
+    var password = document.getElementById("senha").value;
+    var confirmPassword = document.getElementById("conSenha").value;
+
+    if (password !== confirmPassword) {
+        document.getElementById("message").innerHTML = "<div id='error_confirmarsenha' class='erro_confirmarsenha'><p>Senha Incorreta</p></div>";
+
+        event.preventDefault();  // Impede o envio do formulário
+    } else {
+        message.textContent = ""; // Limpa a mensagem de erro
+    }
+});
+

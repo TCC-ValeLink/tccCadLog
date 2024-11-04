@@ -66,6 +66,8 @@ ul {
   margin-top: 3rem;
 }
 
+
+
 .item-src.expandir {
   width: 56.8rem;
   height: 55rem;
@@ -82,6 +84,7 @@ ul {
   cursor: pointer;
   display: flex;
   float: left;
+  transition: transform 0.5s ease;            
 }
 
 .srcdiv .item-src spam:hover {
@@ -92,6 +95,8 @@ ul {
   list-style-type: none;
   align-items: center;
   cursor: pointer;
+  transform: scale(1.1);
+
 }
 
 .srcdiv .item-src .iconsrc {
@@ -107,28 +112,23 @@ ul {
 .srcdiv .item-src .iconsrc > i:hover {
   font-size: 4.1rem;
   color: #8a8989;
+
 }
 
 /* Home Empresa / (usuário?) */
 
 .center {
   width: 512px;
-  height: fit-content;
+  height: auto;
   background-color: #9EC7AA;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   margin-left: 63.5rem;
   position: relative;
+}
 
-}
-.a{
-  overflow: hidden;
-  overflow-y: scroll;
-  height: 100%;
-}
-.a::-webkit-scrollbar{
-  display: none;
-}
+
 .content-post {
   width: 100%;
   height: auto;
@@ -174,9 +174,16 @@ ul {
 }
 .btnFollow{
   background-color: #01e581;
-  margin-left: 76%;
-  position: absolute;
+  margin-left: 20.8%;
+  position: fixed;
+  transition: all 0.3s ease;
 }
+
+.btnFollow:hover
+{
+  transform: scale(1.1);
+}
+
 .btnCur{
   margin-right: 0.8rem;
   background-color: #2C6BDB;
@@ -212,7 +219,6 @@ ul {
     display: flex;
     flex-flow:row;
     background-color: #fff;
-    justify-content: end;
     align-items: center;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%; 
@@ -222,7 +228,7 @@ ul {
   background-color: #fff;
   height: 20px;
   width: 20px;
-  transform: translatex(-360px);
+  display: block;
   margin-top: -1rem;
 }
 
@@ -230,9 +236,26 @@ ul {
   font-size: 2.5rem;
 }
 
+.btnLike
+{
+  margin-left: 2rem;
+  transition: all 0.3s ease;
+}
+
+.btnCur
+{
+  margin-left: 36.5rem;
+  transition: all 0.3s ease;
+}
+
+.btnCur:hover
+{
+  transform: scale(1.1);
+}
+
 .btnLike:hover
 {
-  transition: all 0.3s ease;
+  transform: scale(1.1);
   color: #ff0000;
 }
 .btnClicado
@@ -256,18 +279,31 @@ ul {
 }
 
 .btnPost {
-  background-color: #01e581;
-  color: #fff;
-  border-radius: 5px;
-  border-width: 1px;
-  border-color: #8a8989;
-  font-size: 1rem;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  font-size: 2rem;
   align-items: center;
   text-align: center;
-  width: 10rem;
-  height: 2rem;
-  margin-left: 200px;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 110rem;
+  margin-top: -7rem;
+  position: fixed;
+  transition: transform 0.5s ease; 
 }
+
+.btnPost:hover
+{
+  transform: scale(1.1);
+}
+
+.btnPost > i
+{
+  font-size: 4rem;
+  color: #01e581;
+}
+
 .top-create-post{
   width: 100%;
   height: 20%;
@@ -294,6 +330,8 @@ ul {
   height: 200px;
   position: relative;
   font-size: small;
+  outline: none;
+  resize: none;
   outline: none;
   margin-top: 1rem;
   border: 1px solid #ccc; 
@@ -351,4 +389,77 @@ ul {
   justify-content: end;
   align-items: center;
   border-radius: 4px; 
+}
+
+/*Container de configuração*/
+
+.container-config
+{
+  z-index: 1;
+  position: absolute;
+  display: none;
+  width: 26rem;
+  height: 25rem;
+  background-color: #fff;
+  margin-left: 77%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+.titleconfig
+{
+  width: 100%;
+  height: 4rem;
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.subtitle1
+{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.4rem;
+  background-color: rgba(0,193,108, 0.1);
+  text-decoration: none;
+  color: #000;
+}
+
+.pConfig
+{
+  color:#696969;
+  font-size: 1.4rem;
+  margin-top: 10rem;
+  width: 20rem;
+}
+
+.cmbbxcf
+{
+  border-radius: 5px;
+  border:0;
+  outline: 0;
+  color: #444444; 
+  font-size: 1.4rem;
+  margin-left: 12rem;
+  margin-top: 10rem ;
+}
+
+.itensconfig
+{
+  display: flex;
+  justify-content: start;
+  margin-top: -10rem;
+}
+/* para a empresa */
+
+.foto-perfil{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
 }

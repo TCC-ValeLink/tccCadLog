@@ -24,7 +24,8 @@
     height: 15rem;
     border: 7px #fff solid;
     box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
-}
+    box-sizing: border-box;
+ }
 
 .perfilemp
 {
@@ -38,7 +39,7 @@
 {
     font-size: 4rem;
     margin-left: 17rem;
-    margin-top: -5rem;
+    margin-top: -5.5rem;
 }
 
 .funcaouser
@@ -62,12 +63,12 @@
 
 .edituser
 {
-    margin-top: 0rem;
+    margin-top: 1rem;
 }
 
 .edituser > i
 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 6rem;
     color: #01E581;
 }
@@ -77,7 +78,7 @@
     font-size: 1.8rem;
     color: #696969;
     margin-left: 10rem;
-    margin-top: -4rem;
+    margin-top: -3.5rem;
 }
 
 .topemp
@@ -139,5 +140,552 @@
     color: #696969;
     margin-left: 10rem;
     margin-top: -3.5rem;
+}
+
+.nav-user
+{
+    position: relative;
+    width: 70rem;
+    height: 4rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.nav-user a
+{
+    position: relative;
+    display: inline-block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 0 23px;
+    color: #000;
+    z-index: 1;
+    cursor: pointer;
+    border: 0;
+}
+
+.nav-user span
+{
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    width:21rem;
+    height: 25%;
+    background: #00C16C;
+    border-radius:  8px;
+    transition: .5s;
+}
+
+.nav-user a:nth-child(1):hover~span,
+.nav-user a:nth-child(1).active~span {
+    left: 3rem;
+    width: 21rem;
+}
+
+.nav-user a:nth-child(2):hover~span,
+.nav-user a:nth-child(2).active~span {
+    left: 28rem;
+    width: 8.5rem;
+}
+
+.nav-user a:nth-child(3):hover~span,
+.nav-user a:nth-child(3).active~span {
+    left: 41rem;
+    width: 13rem;
+}
+
+.nav-user a:nth-child(4):hover~span,
+.nav-user a:nth-child(4).active~span {
+    left: 58rem;
+    width: 9rem;
+}
+
+/*Alterar Info Pessoal*/
+
+.pessoal-info
+{
+    width: 70rem;
+    height: 40rem;
+    background-color: #fff;
+    margin-left: 50rem;
+    margin-top: 2rem;
+    border-radius: 1%;
+    display: fixed;
+}
+
+#lblus1, #lblus2, #lblus3, #lblus4, #lblus5, #lblus6, #lblus7, #lblus8
+{
+    font-size: 2rem;
+    position: absolute;
+    font-weight: 550;
+}
+
+#lblus1
+{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#lblus2
+{  
+    margin-top: -6rem;
+    margin-left: 40rem;
+}
+
+#lblus3
+{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#lblus4
+{
+    margin-top: 2rem;
+    margin-left: 22rem;
+}
+
+#lblus5
+{
+    margin-top: 2.1rem;
+    margin-left: 40rem;
+}
+
+#lblus6
+{
+    margin-top: 9rem;
+    margin-left: 2rem;
+}
+
+#lblus7
+{
+    margin-left: 40rem;
+    margin-top: 9rem;
+}
+
+#lblus8
+{
+    margin-left: 2rem;
+    margin-top: 16rem;
+}
+
+.inputnameus, .inputdataus, .inputrgus, .inputcpfus, .inputespecus
+{
+    font-size: 2rem;
+    text-align: left;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0.3);
+    color: #444444;
+    height: 3rem;
+}
+
+.inputnameus
+{
+    width: 25rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.inputdataus
+{
+    margin-left: 13rem;
+    margin-top: 4rem;
+    width: 22rem;
+    position: absolute;
+}
+
+.inputrgus
+{
+    margin-top: 12rem;
+    margin-left: -25rem;
+    position: fixed;
+    width: 10rem;
+}
+
+.inputcpfus
+{
+    margin-top: 12rem;
+    margin-left: -5rem;
+    width: 15rem;
+    position: absolute;
+}
+
+.inputespecus
+{
+    margin-top: 19rem;
+    margin-left: 13rem;
+    width: 20rem;
+    position: fixed;
+}
+
+.cmbbxus1, .cmbbxus2
+{
+    font-size: 2rem;
+    color: #444444;
+    border-color: rgba(0,0,0,0.3);
+    border-radius: 6px;
+    position: fixed;
+}
+
+.cmbbxus1
+{
+    margin-top: 12rem;
+    margin-left: 13rem;
+}
+
+.cmbbxus2
+{
+    margin-top: 19rem;
+    margin-left: -24.8rem;
+}
+
+.radious, .radio2us, .radio3us, .radio4us
+{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    accent-color: #00C16C;
+    border-color: #00C16C;
+}
+
+.radious
+{
+    margin-left: -25rem;
+    margin-top: 27rem;
+}
+
+.radio2us
+{
+    margin-top: 27rem;
+    margin-left: -5.5rem;
+}
+
+.radio3us
+{
+    margin-top: 27rem;
+    margin-left: 13rem;
+}
+
+.radio4us
+{
+    margin-top: 33rem;
+    margin-left: -24.9rem;
+}
+
+.txt_rd_us, .txt_rd2_us, .txt_rd3_us, .txt_rd4_us
+{
+    font-size: 2rem;
+    position: fixed;
+}
+
+.txt_rd_us
+{
+    margin-left: -22.5rem;
+    margin-top: 26.5rem;
+}
+
+.txt_rd2_us
+{
+    margin-top: 26.5rem;
+    margin-left: -3rem;
+}
+
+.txt_rd3_us
+{
+    margin-top:26.5rem;
+    margin-left: 15.5rem;
+}
+
+.txt_rd4_us
+{
+    margin-top: 32.5rem;
+    margin-left: -22.5rem;
+}
+
+/*Alterar Endereco*/
+
+.pessoal-ende
+{
+    width: 70rem;
+    height: 40rem;
+    background-color: #fff;
+    margin-left: 50rem;
+    margin-top: 2rem;
+    border-radius: 1%;
+    display: none;
+}
+
+#lblus21, #lblus22, #lblus23, #lblus24, #lblus25, #lblus26, #lblus27, #lblus28, #lblus29
+{
+    font-size: 2rem;
+    position: fixed;
+    font-weight: 550;
+}
+
+.inputcidUS, .inputruaUS,.inputemailUS, .inputbrUS, .inputnumUS, .inputcepUS, .inputrefUS, .inputtempUS, .inputvlrUS, .inputtipUS
+{
+    font-size: 2rem;
+    text-align: left;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0.3);
+    color: #444444;
+    height: 3rem;
+}
+
+#lblus21
+{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.inputcidUS
+{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    width: 20rem;
+    position: absolute;
+}
+
+#lblus22
+{  
+    margin-top: 1rem;
+    margin-left: 40rem;
+}
+
+.inputruaUS
+{
+    margin-left: 40rem;
+    margin-top: 4rem;
+    position: absolute;
+    width: 20rem;
+}
+
+#lblus23
+{
+    margin-left: 2rem;
+    margin-top: 9rem;
+}
+
+.inputbrUS
+{
+    
+    margin-left: 2rem;
+    margin-top: 12rem;
+    width: 15rem;
+}
+
+#lblus24
+{
+    margin-top: -6rem;
+    margin-left: 22rem;
+}
+
+.inputnumUS
+{
+    margin-top: -3rem;
+    margin-left: 4.5rem;
+    width: 15rem;
+}
+
+#lblus25
+{
+    margin-top: -6rem;
+    margin-left: 40rem;
+}
+
+.inputcepUS
+{
+    margin-top: 12rem;
+    margin-left: 3rem;
+    position: absolute;
+}
+
+#lblus26
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.inputrefUS
+{
+    margin-top: 20rem;
+    margin-left: -35rem;
+    position: absolute;
+}
+
+#lblus27
+{
+    margin-top: 2rem;
+    margin-left: 40rem;
+}
+
+.inputtempUS
+{
+    margin-top: 20rem;
+    margin-left: 3rem;
+    position: absolute;
+}
+
+#lblus28
+{
+    margin-left: 2rem;
+    margin-top: 10rem;
+}
+
+.inputvlrUS
+{
+    margin-top: 28.5rem;
+    margin-left: -35rem;
+    position: absolute;
+}
+
+#lblus29
+{
+    margin-left: 40rem;
+    margin-top: 10rem;
+}
+
+.inputtipUS
+{
+    margin-top: 28.5rem;
+    margin-left: 3rem;
+    position: absolute;
+}
+
+/*CURRICULO*/
+
+.acessar-curriculo
+{
+    width: 70rem;
+    height: 40rem;
+    background-color: #fff;
+    margin-left: 50rem;
+    margin-top: -6rem;
+    border-radius: 1%;
+    display: none;
+}
+
+.eng-cur
+{
+    width: 20rem;
+    margin-left: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;    
+    margin-top: 8rem;        
+}
+
+.eng-cur:hover
+{
+    transform: scale(1.1);
+}
+
+.acessar-curriculo .eng-cur > i
+{
+    font-size: 15rem;
+    color: #92E3A9;
+}
+
+.acessar-curriculo p
+{
+    font-size: 3rem;
+    font-weight: 400 !important;
+    margin-left: 18rem;
+}
+
+/*OUTROS DADOS*/
+
+.pessoal-outros-dados
+{
+    width: 70rem;
+    height: 40rem;
+    background-color: #fff;
+    margin-left: 50rem;
+    margin-top: 2rem;
+    border-radius: 1%;
+    display: none;
+}
+
+.inputemailUS
+{
+    margin-top: 12rem;
+    margin-left: 23rem;
+    position: absolute;
+}
+
+/*NAVBAR EMPRESA*/
+
+.nav-emp
+{
+    position: relative;
+    width: 70rem;
+    height: 4rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:53.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.nav-emp a
+{
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 0 80px;
+    color: #000;
+    z-index: 1;
+    cursor: pointer;
+    border: 0;
+}
+
+.nav-emp span
+{
+    position: absolute;
+    bottom: 0;
+    left: 15rem;
+    width:16.5rem;
+    height: 25%;
+    background: #00C16C;
+    border-radius:  8px;
+    transition: .5s;
+}
+
+.nav-emp a:nth-child(1):hover~span,
+.nav-emp a:nth-child(1).active~span {
+    left: 15.5rem;
+    width: 16rem;
+}
+
+.nav-emp a:nth-child(2):hover~span,
+.nav-emp a:nth-child(2).active~span {
+    left: 46.5rem;
+    width: 8.5rem;
+}
+
+.posts-emppriv
+{
+    display: fixed;
+}
+
+.LocEmp
+{
+    width: 70rem;
+    height: 30rem;
+    background-color: #000;
+    display: none;
+    margin-left: 53.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
 }
 

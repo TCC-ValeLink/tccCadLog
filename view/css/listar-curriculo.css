@@ -1,0 +1,85 @@
+.curriculo
+{
+    width: 41.4rem;
+    height: 80%;
+    background-color: #fff;
+    position: fixed;
+    margin-left: 10%;
+    margin-top: 5rem;
+    border-radius: 3%;
+    border-bottom: #000;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+  
+  .curriculo::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* cor da barra de rolagem */
+    border-radius: 10px; /* cantos arredondados */
+  }
+
+  .curriculo::-webkit-scrollbar-track {
+    background-color: transparent; /* deixa a trilha da barra invisível */
+  }
+  
+  /* Estilos para o Firefox */
+  .curriculo {
+    scrollbar-width: thin; /* barra de rolagem fina */
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* cor da barra e da trilha */
+  }
+
+  .curriculo::-webkit-scrollbar-button {
+    display: none; /* Garante que não aparecerão botões de rolagem no WebKit */
+  }
+
+.compCurriculo
+{
+    cursor: pointer;
+    margin-top: -1rem;
+}
+
+.compCurriculo a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.img-curriculo2
+{
+    width: 7rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#follow-line2
+{
+    height: 3.8rem;
+    width: 0.3rem;
+    background-color: #01E581;
+    margin-left: 10rem;
+    margin-top: -5rem;
+    position: absolute;
+}
+
+.tipo-Curriculo
+{
+    font-size: 1.4rem;
+    margin-left: 11rem;
+    margin-top: -5.2rem;
+}
+
+.nome-Curriculo
+{
+    font-size: 1.4rem;
+    margin-left: 11rem;
+    margin-top: -1.2rem;
+    color: #444444;
+}
+
+#follow-line-horizon
+{
+    height: 0.1rem;
+    width: 100%;
+    background-color: rgba(168, 166, 166, 0.5);
+    position: relative;
+}

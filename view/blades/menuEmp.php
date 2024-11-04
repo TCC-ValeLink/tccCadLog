@@ -8,14 +8,14 @@
         <ul>
             <li class="item-menu ativo">
                 <a href="perfilPrivEmp.php">
-                <spam class="img-menu"><i class="bi bi-person"></i></spam>
+                <spam class="img-menu"><i class="bi bi-person-fill"></i></spam>
                 <spam class="txt-spam">Perfil</spam>
                 </a>
             </li>
             
             <li class="item-menu">
-                <a href="#">
-                <spam class="img-menu"><i class="bi bi-briefcase-fill"></i></spam>
+                <a href="./listar-curriculo.php">
+                <spam class="img-menu"><i class="bi bi-clipboard2-data-fill"></i></spam>
                 <spam class="txt-spam">Curriculos</spam>
                 </a>
 
@@ -27,10 +27,16 @@
                 <spam class="img-menu"><i class="bi bi-plus-circle-fill"></i></spam>
                 <spam class="txt-spam">Posts</spam>
                 </a>
-                
+            </li>
 
+            <li class="item-menu">
+                <a href="./CriarVaga.php">
+                <spam class="img-menu"><i class="bi bi-briefcase-fill"></i></spam>
+                <spam class="txt-spam">Criar uma Vaga</spam>
+                </a>
             </li>
         </ul>
 </nav>
 <script src="../menu.js"></script>
+<!-- <i class="bi bi-briefcase-fill"></i> -->
 <?php Include("footercomp.php")?>

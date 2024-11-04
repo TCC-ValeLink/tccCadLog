@@ -216,5 +216,16 @@
     width: 52.3rem;
     height: 6.6rem;
     margin-left: 80rem;
-    margin-top: 10rem;                 
+    margin-top: 10rem;     
+    transition: transform 0.5s ease;            
 }
+
+
+.btncd2:hover
+{
+    transform: scale(1.1);
+}
+/*animação de botões 
+vai na classe da div -> transition: transform 0.5s ease; 
+vai no hover -> transform: scale(1.1);
+*/

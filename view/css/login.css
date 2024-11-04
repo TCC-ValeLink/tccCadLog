@@ -132,17 +132,28 @@ div
     color: #01E581;
 }
 
-.btn
+.btnL
 {
     position: absolute;
     width: 27.6rem;
     height: 6.6rem;
-    margin-left: 90rem;
-    margin-top: 20rem;
-
-                
+    margin-left: 87rem;
+    margin-top: 15rem;
+    background-color:#01E581; 
+    color: #fff; 
+    border-radius:20px; 
+    font-size: 3.4rem; 
+    align-items: center; 
+    text-align: center;
+    transition: transform 0.5s ease;  
 }
-.erro_email,.erro_senha,.erro_login{
+
+.btnL:hover
+{
+    transform: scale(1.1)
+}
+
+.erro_email,.erro_senha,.erro_login,.erro_confirmarsenha{
     border-radius: 5px;
     margin-top: 45.6rem;
     background-color: rgba(255, 0, 0, 0.6);
@@ -162,13 +173,21 @@ div
     margin-left: 158rem;
 }
 
+.erro_confirmarsenha
+{
+    width: 12rem;
+    height: 1.8rem;
+    margin-left: 110rem;
+    margin-top: 5rem !important;
+}
+
 /*PARTE ESQUERDA DA TELA*/
 
 #leftside
 {
-    position: absolute;
+    position: fixed;
     width: 45%;
-    height: 97%;
+    height: 100%;
     margin-top: -2.8rem;
     border: 1px solid #fff;
     box-shadow: 0px 0px 10px #EFECEC;

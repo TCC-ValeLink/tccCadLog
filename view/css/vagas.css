@@ -206,6 +206,16 @@ input::placeholder
     margin-top: 1rem;
   }
 
+  .btn_vagas
+  {
+    transition: transform 0.5s ease;            
+  }
+
+  .btn_vagas:hover
+  {
+    transform: scale(1.1);
+  }
+
 /*PARTE ESQUERDA DA TELA*/
 
 .fllw-vagas

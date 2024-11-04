@@ -21,15 +21,8 @@
                <div id="icon2" onclick="showHide()"></div>
                <br>
                <br>
-               <p class="txt_bx">Você ainda não tem uma conta?<a href="index.php" class="hl">Cadastrar</a></p>
-               <button id="showsweetalert" type="submit" class="btn" style="    
-               background-color:#01E581; 
-               color: #fff; 
-               border-radius:20px; 
-               font-size: 3.4rem; 
-               align-items: center; 
-               text-align: center;"
-               >Entrar</button>
+               <p class="txt_bx">Pulou uma etapa?<a href="index.php" class="hl">Voltar</a></p>
+               <button id="showsweetalert" type="submit" class="btnL">Entrar</button>
             </form>
             
    </div>

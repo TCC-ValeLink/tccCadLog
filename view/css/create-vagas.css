@@ -1,0 +1,194 @@
+.container-create-vagas
+{
+    width: 75rem;
+    height: 60rem;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    margin-left: 51rem;
+    margin-top: 10rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #8a8989;
+}
+
+.container-create-vagas label
+{
+    font-size: 2rem;
+    position: absolute;
+    }
+
+.desclbl
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#descricao_vagas
+{
+    width: 90%;
+    height: 15rem;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 2rem;
+    border-color: rgba(0,0,0,0.3);      
+}
+
+.container-create-vagas input
+{
+    font-size: 2rem;
+    text-align: left;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0.3);
+    color: #444444;
+    height: 3rem;
+    display: none;
+}
+
+#sobre_vagas
+{
+    width: 90%;
+    height: 15rem;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 2rem;
+    border-color: rgba(0,0,0,0.3);
+    outline:none;
+    resize: none; 
+}
+
+.reqlbl
+{
+    margin-left: -65.5rem;
+    margin-top: 23rem;
+}
+
+.inputCV
+{
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    display: block !important;
+}
+
+.carlbl
+{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.inputCV2
+{
+    width: 25%;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    display: block !important;
+}
+
+.benelbl
+{
+    margin-left: 25rem;
+    margin-top: -6rem;
+}
+
+.inputCV3
+{
+    width: 45%;
+    margin-left: 25rem;
+    margin-top: -3.1rem;
+    display: block !important;
+}
+
+.tiplbl
+{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.inputCV4
+{
+    width: 30%;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    display: block !important;
+}
+
+.templbl
+{
+    margin-left: 30rem;
+    margin-top: -6rem;
+}
+
+.inputCV5
+{
+    width: 20%;
+    margin-left: 30rem;
+    margin-top: -3rem;
+    display: block !important;
+}
+
+.sallbl
+{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.inputCV6
+{
+    width: 20%;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    display: block !important;
+}
+
+.postarVaga {
+    background-color: #01e581;
+    color: #fff;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #8a8989;
+    font-size: 1.4rem;
+    align-items: center;
+    text-align: center;
+    width: 9rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-left: 58rem;
+    margin-top: -3rem;
+  }
+
+  .btnCloseVaga{
+    margin-left:87%;
+    background-color: #fff;
+    outline: none;
+    border-width: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin-top: -1rem;
+  }
+
+  .inputCV7
+{
+    width: 30%;
+    margin-left: 30rem;
+    margin-top: -3rem;
+    display: block !important;
+}
+
+.arealbl
+{
+    margin-left: 30rem;
+    margin-top: -6rem;
+}
+
+.btnCur2
+{
+    background-color: #01e581;
+    margin-left: 36.5rem;
+    transition: all 0.3s ease;
+}

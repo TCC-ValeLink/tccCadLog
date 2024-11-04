@@ -260,5 +260,11 @@
     width: 52.3rem;
     height: 6.6rem;
     margin-left: 80rem;
-    margin-top: 1rem;                 
+    margin-top: 1rem;       
+    transition: transform 0.5s ease;          
+}
+
+.btncd:hover
+{
+  transform: scale(1.1)
 }
