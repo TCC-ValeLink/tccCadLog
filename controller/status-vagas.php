@@ -1,5 +1,7 @@
 <?php
-session_start(); // Primeiro
+if (!isset($_COOKIE)) {
+    session_start();
+} 
 include("../model/connect.php");
 
 if (!isset($_COOKIE['idEmpresa'])) {
