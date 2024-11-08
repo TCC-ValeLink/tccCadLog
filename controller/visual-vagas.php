@@ -9,6 +9,7 @@ $query = mysqli_query($connect, "SELECT
     empresa.nome_empresa,
     vagas.sobre_vagas,
     vagas.carga_horaria_vagas,
+    vagas.area_vagas,
     vagas.pre_requisitos_vagas,
     vagas.beneficios_vagas,
     vagas.salario_vagas,
@@ -40,6 +41,7 @@ while ($exibe = mysqli_fetch_array($query)) {
             <div class='conteudo-post'>
                 <p><h3>Sobre:</h3> $sobre_vagas_limited</p>
                 <p><h3>Carga Horária:</h3> {$exibe['carga_horaria_vagas']}</p>
+                <p><h3>Área:</h3> {$exibe['area_vagas']}</p>
                 <p><h3>Pré-requisitos:</h3> {$exibe['pre_requisitos_vagas']}</p>
                 <p><h3>Benefícios:</h3> {$exibe['beneficios_vagas']}</p>
                 <p><h3>Salário:</h3> {$exibe['salario_vagas']}</p>
