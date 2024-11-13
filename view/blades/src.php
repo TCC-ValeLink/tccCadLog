@@ -1,19 +1,26 @@
 <?php Include("top.php")?>
 
 <div class="srcdiv">
-    <div class="buscar-box">
-        <div class="lupa-buscar">
-            <label for="src" style="cursor:pointer;"><i class="bi bi-search"></i></label>
-        </div>
-
-        <div class="input-buscar">
-            <input type="text" placeholder="Pesquisa" class="srcbar" tabindex="1rem" id="src">
-        </div>
-    </div>
+<div class="header-src">    
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352zz'" />
+                    </defs>
+                    <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 117, 92,0.9)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(1, 229, 129  ,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0, 193, 108, 0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(158, 255, 48,0.3)" />
+                    </g>
+                    </svg>  
+                </div>
+            </div> 
     
     <ul id="toma-toma">
         <li class="item-src">
-            <spam class="iconsrc">
+            <spam class="iconsrc" onclick="funcaoNotify()">
                 <i class="bi bi-bell-fill"></i>
             </spam> 
         </li>
@@ -34,8 +41,14 @@
     </ul>
 </div>
 
+
+
+<div id="container-notificação" class="container-notificação">
+    <div class="titlenotif"><p>Notificações</p><i class="bi bi-bell-fill"></i></div>
+</div>
+
 <div id="container-config" class="container-config">
-    <div class="titleconfig">Configurações</div>
+    <div class="titleconfig"><p>Configurações</p><i class="bi bi-gear-fill"></i></div>
         <div class="subtitle1">Acessibilidade</div>
             <div class="itensconfig">
                 <p class="pConfig">Fonte</p>
@@ -86,6 +99,16 @@
         document.getElementById("container-config").style.display = "block";
     } else { 
         document.getElementById("container-config").style.display = "none";
+    }
+    estado = !estado; // Inverte o valor de estado
+    };
+
+    let estado2 = false;
+     function funcaoNotify() {
+    if (!estado) { 
+        document.getElementById("container-notificação").style.display = "block";
+    } else { 
+        document.getElementById("container-notificação").style.display = "none";
     }
     estado = !estado; // Inverte o valor de estado
     };

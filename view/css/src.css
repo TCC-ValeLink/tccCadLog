@@ -6,7 +6,7 @@
   margin-left: 0;
   align-items: center;
   display: flex;
-}
+  }
 
 .buscar-box {
   width: 151rem;
@@ -55,14 +55,15 @@
   font-size: 2.5rem;
 }
 
-ul {
+ ul {
   list-style-type: none;
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
+  z-index: 1000;
 }
 
 .item-src {
-  margin-left: 35rem;
+  margin-left: 150rem;
   margin-top: 3rem;
 }
 
@@ -417,6 +418,12 @@ ul {
   font-size: 1.6rem;
 }
 
+.titleconfig p
+{
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
 .subtitle1
 {
   width: 100%;
@@ -462,4 +469,109 @@ ul {
   height: 40px;
   width: 40px;
   background-color: #fff;
+}
+
+/*icon config*/
+
+.titleconfig > i 
+{
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+
+/*Notificacões*/
+
+.container-notificação
+{
+  z-index: 1;
+  position: absolute;
+  display: none;
+  width: 36rem;
+  height: 35rem;
+  background-color: #fff;
+  margin-left: 67%;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.titlenotif
+{
+  width: 100%;
+  height: 6rem;
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.titlenotif p
+{
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.titlenotif > i
+{
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+
+.header-src {
+  position:absolute;
+  text-align:center;
+  color:#00755C;
+  margin-top: 1rem;
+  left: 0rem;
+  width: 100%;
+}
+ .waves {
+  position:absolute;
+  width: 100%;
+  height:15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height:200px;
+  max-height:200px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
 }
