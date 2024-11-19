@@ -10,7 +10,7 @@ $cod_empresa = $_COOKIE['idEmpresa'];
 
 $query_candidaturas = "SELECT 
     ec.cod_envio_curriculo,
-    u.cod_usuario,  -- Adiciona o código do usuário para o link do perfil
+    u.cod_usuario, 
     u.nome_usuario,
     u.email_usuario,
     u.telefone_usuario,

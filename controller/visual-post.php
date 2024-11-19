@@ -1,11 +1,18 @@
 <?php
 
-  include("../model/connect.php");
-  $inicio = 0;
-  $limite = 1;
-  $query = mysqli_query($connect, "SELECT empresa.foto_empresa, empresa.nome_empresa, post.hora_post, post.data_post, post.conteudo_post, post.midia_post FROM post INNER JOIN empresa ON post.cod_empresa = empresa.cod_empresa ORDER BY cod_post DESC LIMIT $inicio,$limite");
-  while ($exibe = mysqli_fetch_array($query)) {
-      echo "  
+include("../model/connect.php");
+
+$inicio = 0;
+$limite = 1;
+$query = mysqli_query($connect, "SELECT empresa.foto_empresa, empresa.nome_empresa, post.hora_post, post.data_post, post.conteudo_post, post.midia_post FROM post INNER JOIN empresa ON post.cod_empresa = empresa.cod_empresa ORDER BY cod_post DESC LIMIT $inicio,$limite");
+
+while ($exibe = mysqli_fetch_array($query)) {
+
+    // Verifica se a imagem de mídia existe ou está vazia
+    $midiaPost = $exibe[5];
+    $imagemPost = (!empty($midiaPost) && file_exists('../view/imgs/'.$midiaPost)) ? $midiaPost : null;
+
+    echo "  
        <div class='center'>
         <div class='content-post'>
             <div class='top-post'>
@@ -20,21 +27,27 @@
                     class='btnFollow'>Seguir</button>
             </div>
             <div class='conteudo-post'>$exibe[4]</div>
-            <div class='center-post'>
-            <div class='midia-post'><img src='../view/imgs/$exibe[5]' style='width: 50%; height=auto;'></div>
-            </div>
-            <div class='footer-post'>
+            <div class='center-post'>";
+                
+    // Verifica se há mídia para mostrar, caso contrário exibe um ícone ou não exibe nada
+    if ($imagemPost) {
+        echo "<div class='midia-post'><img src='../view/imgs/$imagemPost' style='width: 50%; height:auto;'></div>";
+    } else {
 
+    }
+
+    echo "  </div>
+            <div class='footer-post'>
                 <button type='submit' name='btnLike' id='like' value='0' onclick='mudarCor(this)' class='btnLike'><i class='bi bi-heart-fill'></i></button>
             </div>
         </div> <!-- Div content-post -->
-    </div>  <!-- Div ccenter -->
+    </div>  <!-- Div center -->
+
 <script>
     function mudarCor(botao)
     {
         botao.classList.toggle('btnClicado')
     }
 </script>";
-  }
+}
 ?>
-

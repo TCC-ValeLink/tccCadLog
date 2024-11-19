@@ -155,13 +155,28 @@
                align-items:center;
                justify-content: center;
                margin-top:3rem;
-               margin-left: 24rem;
+               margin-left: 12rem;
                border: 0.8px solid  rgba(0,0,0,0.3)"
-               >Configurar</button>
+               >Criar</button>
+
+               <button type="submit" name="btnCadastro2" class="btncd2" onclick="funcaoAbrir()" style="    
+               background-color:#01E581;
+               color: #fff;
+               width:22rem;
+               height: 5rem;
+               border-radius:8px;
+               font-size: 2rem;
+               display: flex;
+               align-items:center;
+               justify-content: center;
+               margin-top:3rem;
+               margin-left: 38rem;
+               border: 0.8px solid  rgba(0,0,0,0.3)"
+               >Alterar</button>
    </div>
  
    <div id="container-geral" class="container-create-curriculo">
-        <form action="../controller/create-curriculo.php" method="POST">
+        <form action="../controller/criar-curriculo.php" method="POST">
             <button type="submit" class="btnCloseCur bi bi-x" id="btnClose"
             style="color: lightgreen; font-size: 30px;"></button>
            

@@ -1,15 +1,14 @@
-<?php Include("blades/top.php")?>
-<?php Include("blades/src.php")?>
-    <div class="body-home">
+<?php include("blades/top.php") ?>
+<?php include("blades/src.php") ?>
+<div class="body-home">
 
-    <?php Include("../controller/visual-vagas.php")?>
+    <?php include("../controller/visual-vagas.php") ?>
 
 
-    <?php Include("../controller/visual-post.php")?>
-    <?php Include("../controller/visualisando-resposta.php")?>
+    <?php include("../controller/visual-post.php") ?>
 
-    </div>
+</div>
 
-<?php Include("blades/followemp.php")?>
-<?php Include("blades/menu.php")?>
-<?php Include("blades/footercomp.php")?>
+<?php include("blades/followemp.php") ?>
+<?php include("blades/menu.php") ?>
+<?php include("blades/footercomp.php") ?>
