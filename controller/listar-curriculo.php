@@ -30,13 +30,17 @@ $result_candidaturas = mysqli_query($connect, $query_candidaturas);
 if (!$result_candidaturas) {
     die("Erro na consulta: " . mysqli_error($connect));
 }
-
 while ($candidatura = mysqli_fetch_assoc($result_candidaturas)) {
-    echo "<div class='candidatura' onclick= 'funcaoAbrir(this)'>
+    echo "<div class='candidatura' onclick='funcaoAbrir(this)'>
             <div class='resumo'>
                 <img src='../view/imgs-foto-perfil-user/" . htmlspecialchars($candidatura['foto_usuario']) . "' alt='Foto do Usuário' class='foto_usuario'>
                 <div>
-                    <h3><a href='../view/perfil.php?cod_usuario=" . htmlspecialchars($candidatura['cod_usuario']) . "'>" . htmlspecialchars($candidatura['nome_usuario']) . "</a></h3> <!-- Nome com hyperlink para o perfil -->
+                    <h3>
+                        <a href='../view/perfil.php?cod_usuario=" . htmlspecialchars($candidatura['cod_usuario']) . "'>
+                            " . htmlspecialchars($candidatura['nome_usuario']) . "
+                        </a>
+                    </h3>
+
                     <p>Email: " . htmlspecialchars($candidatura['email_usuario']) . "</p>
                     <p>Área da Vaga: " . htmlspecialchars($candidatura['area_vagas']) . "</p>
                     <p>Status: " . htmlspecialchars($candidatura['status_feedback'] ?? 'Nenhum feedback dado') . "</p>
@@ -84,6 +88,6 @@ while ($candidatura = mysqli_fetch_assoc($result_candidaturas)) {
             </label><br>
             <textarea id='habilidades' name='habilidades' class='conteudo-curriculo' required></textarea><br><br>
     </div>
-    <script src='../view/abrir.js'></script>";
+    <script src='../../view/abrir.js'></script>";
 }
 ?>

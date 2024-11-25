@@ -2,7 +2,7 @@
 include("../model/connect.php");
 
 $inicio = 0;
-$limite = 5; // Vamos listar 5 vagas por vez
+$limite = 5;
 $query = mysqli_query($connect, "SELECT empresa.foto_empresa, empresa.nome_empresa, vagas.hora_vagas, vagas.data_vagas, vagas.area_vagas, vagas.sobre_vagas, vagas.cod_vaga 
                                   FROM vagas 
                                   INNER JOIN empresa ON vagas.cod_empresa = empresa.cod_empresa 

@@ -8,7 +8,6 @@ $query = mysqli_query($connect, "SELECT empresa.foto_empresa, empresa.nome_empre
 
 while ($exibe = mysqli_fetch_array($query)) {
 
-    // Verifica se a imagem de mídia existe ou está vazia
     $midiaPost = $exibe[5];
     $imagemPost = (!empty($midiaPost) && file_exists('../view/imgs/'.$midiaPost)) ? $midiaPost : null;
 
@@ -29,7 +28,6 @@ while ($exibe = mysqli_fetch_array($query)) {
             <div class='conteudo-post'>$exibe[4]</div>
             <div class='center-post'>";
                 
-    // Verifica se há mídia para mostrar, caso contrário exibe um ícone ou não exibe nada
     if ($imagemPost) {
         echo "<div class='midia-post'><img src='../view/imgs/$imagemPost' style='width: 50%; height:auto;'></div>";
     } else {
