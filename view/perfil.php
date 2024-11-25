@@ -235,9 +235,10 @@
         <button type="submit" class="btnCloseCur bi bi-x" id="btnClose2"
             style="color: lightgreen; font-size: 30px;"></button>
         <form action="../controller/atualizar-curriculo.php" method="POST">
+        <?php include("../controller/select-top-curriculo.php") ?>
 
             <label for="objetivo">
-                <h2>Obj:</h2>
+                <h2>Objetivo:</h2>
             </label><br>
             <textarea id="objetivo" class="conteudo-curriculo" name="objetivo"
                 required><?= htmlspecialchars($curriculo['objetivo_curriculo']) ?></textarea><br><br>
