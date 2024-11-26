@@ -3,12 +3,160 @@
 <div class="body-home">
     <?php include("../controller/funcao-select-user.php") ?>
     <nav class="nav-user">
-        <a>Informações Pessoais</a>
-        <a>Endereço</a>
-        <a>Outros Dados</a>
-        <a>Currículo</a>
-        <span></span>
-    </nav>
+    <a>Informações Pessoais</a>
+    <a>Endereço</a>
+    <a>Outros Dados</a>
+    <a>Currículo</a>
+    <button class="btn-editar-tudo" onclick="abrirTelaEdicao()">Editar Todas as Informações</button>
+</nav>
+
+<!-- <div id="tela-edicao" class="tela-edicao" style="display: none;">
+    <form id="form-edicao-usuario" method="POST">
+        <h2>Editar Informações</h2>
+
+        <label>Nome Completo:</label>
+        <input type="text" name="nome" id="nome-usuario">
+
+        <label>Data de Nascimento:</label>
+        <input type="date" name="data_nascimento" id="data-nascimento-usuario">
+
+        <label>RG:</label>
+        <input type="text" name="rg" id="rg-usuario">
+
+        <label>CPF:</label>
+        <input type="text" name="cpf" id="cpf-usuario">
+
+        <label>Estado Civil:</label>
+        <select name="estado_civil" id="estado-civil-usuario">
+            <option value="S">Solteiro</option>
+            <option value="C">Casado</option>
+            <option value="V">Viúvo</option>
+            <option value="SP">Separado</option>
+            <option value="D">Divorciado</option>
+        </select>
+
+        <label>Deficiência:</label>
+        <select name="deficiencia" id="deficiencia-usuario">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label>Especifique:</label>
+        <input type="text" name="especificacao" id="especificacao-usuario">
+
+        <label>Sexo:</label>
+        <select name="sexo" id="sexo-usuario">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+            <option value="Prefiro não dizer">Prefiro não dizer</option>
+        </select>
+
+        <button type="submit">Salvar Alterações</button>
+        <button type="button" onclick="fecharTelaEdicao()">Cancelar</button>
+    </form>
+</div>
+ -->
+
+ <!-- css popup
+  .tela-edicao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tela-edicao form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+ -->
+
+ <!-- js abrir e fecharTelaEdicao
+  
+ <script>
+    function abrirTelaEdicao() {
+        document.getElementById("tela-edicao").style.display = "flex";
+        carregarDadosUsuario();
+    }
+
+    function fecharTelaEdicao() {
+        document.getElementById("tela-edicao").style.display = "none";
+    }
+
+    async function carregarDadosUsuario() {
+        const response = await fetch("../controller/get-user-info.php");
+        const usuario = await response.json();
+
+        document.getElementById("nome-usuario").value = usuario.nome;
+        document.getElementById("data-nascimento-usuario").value = usuario.data_nascimento;
+        document.getElementById("rg-usuario").value = usuario.rg;
+        document.getElementById("cpf-usuario").value = usuario.cpf;
+        document.getElementById("estado-civil-usuario").value = usuario.estado_civil;
+        document.getElementById("deficiencia-usuario").value = usuario.deficiencia;
+        document.getElementById("especificacao-usuario").value = usuario.especificacao;
+        document.getElementById("sexo-usuario").value = usuario.sexo;
+    }
+</script>
+-->
+
+<!-- get-user-info.php no controller
+ 
+<?php
+include("../model/connect.php");
+
+// Obtém o ID do usuário logado
+$cod_usuario = $_COOKIE['idUsuario'];
+
+$query = "SELECT * FROM usuario WHERE id = ?";
+$stmt = $connect->prepare($query);
+$stmt->bind_param("i", $cod_usuario);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows > 0) {
+    echo json_encode($result->fetch_assoc());
+} else {
+    echo json_encode(["error" => "Usuário não encontrado."]);
+}
+?> -->
+
+<!-- update-user.php
+ 
+<?php
+include("../model/connect.php");
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $cod_usuario = $_COOKIE['idUsuario'];
+
+    $nome = $_POST['nome'];
+    $data_nascimento = $_POST['data_nascimento'];
+    $rg = $_POST['rg'];
+    $cpf = $_POST['cpf'];
+    $estado_civil = $_POST['estado_civil'];
+    $deficiencia = $_POST['deficiencia'];
+    $especificacao = $_POST['especificacao'];
+    $sexo = $_POST['sexo'];
+
+    $query = "UPDATE usuario SET nome = ?, data_nascimento = ?, rg = ?, cpf = ?, estado_civil = ?, deficiencia = ?, especificacao = ?, sexo = ? WHERE id = ?";
+    $stmt = $connect->prepare($query);
+    $stmt->bind_param("ssssssssi", $nome, $data_nascimento, $rg, $cpf, $estado_civil, $deficiencia, $especificacao, $sexo, $cod_usuario);
+
+    if ($stmt->execute()) {
+        echo json_encode(["status" => "success", "message" => "Dados atualizados com sucesso!"]);
+    } else {
+        echo json_encode(["status" => "error", "message" => "Erro ao atualizar os dados."]);
+    }
+}
+?>
+-->
 
     <div class="pessoal-info" id="pessoal-info">
         <form action="" method="POST">
