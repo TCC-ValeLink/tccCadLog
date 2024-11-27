@@ -1,5 +1,6 @@
 <?php include("blades/top.php") ?>
 <?php include("blades/srcEmp.php") ?>
+
 <div class="body-home">
     <?php Include("../controller/funcao-select-emp.php")?>
     <nav class="nav-emp">
@@ -95,5 +96,6 @@ links.forEach(link => {
 
 ;
 </script>
+
 <?php include("blades/menuEmp.php") ?>
 <?php include("blades/footercomp.php") ?>

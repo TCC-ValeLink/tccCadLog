@@ -3,160 +3,13 @@
 <div class="body-home">
     <?php include("../controller/funcao-select-user.php") ?>
     <nav class="nav-user">
-    <a>Informações Pessoais</a>
-    <a>Endereço</a>
-    <a>Outros Dados</a>
-    <a>Currículo</a>
-    <button class="btn-editar-tudo" onclick="abrirTelaEdicao()">Editar Todas as Informações</button>
-</nav>
+        <a>Informações Pessoais</a>
+        <a>Endereço</a>
+        <a>Outros Dados</a>
+        <a>Currículo</a>
+    </nav>
 
-<!-- <div id="tela-edicao" class="tela-edicao" style="display: none;">
-    <form id="form-edicao-usuario" method="POST">
-        <h2>Editar Informações</h2>
 
-        <label>Nome Completo:</label>
-        <input type="text" name="nome" id="nome-usuario">
-
-        <label>Data de Nascimento:</label>
-        <input type="date" name="data_nascimento" id="data-nascimento-usuario">
-
-        <label>RG:</label>
-        <input type="text" name="rg" id="rg-usuario">
-
-        <label>CPF:</label>
-        <input type="text" name="cpf" id="cpf-usuario">
-
-        <label>Estado Civil:</label>
-        <select name="estado_civil" id="estado-civil-usuario">
-            <option value="S">Solteiro</option>
-            <option value="C">Casado</option>
-            <option value="V">Viúvo</option>
-            <option value="SP">Separado</option>
-            <option value="D">Divorciado</option>
-        </select>
-
-        <label>Deficiência:</label>
-        <select name="deficiencia" id="deficiencia-usuario">
-            <option value="sim">Sim</option>
-            <option value="nao">Não</option>
-        </select>
-
-        <label>Especifique:</label>
-        <input type="text" name="especificacao" id="especificacao-usuario">
-
-        <label>Sexo:</label>
-        <select name="sexo" id="sexo-usuario">
-            <option value="Masculino">Masculino</option>
-            <option value="Feminino">Feminino</option>
-            <option value="Outro">Outro</option>
-            <option value="Prefiro não dizer">Prefiro não dizer</option>
-        </select>
-
-        <button type="submit">Salvar Alterações</button>
-        <button type="button" onclick="fecharTelaEdicao()">Cancelar</button>
-    </form>
-</div>
- -->
-
- <!-- css popup
-  .tela-edicao {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tela-edicao form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
- -->
-
- <!-- js abrir e fecharTelaEdicao
-  
- <script>
-    function abrirTelaEdicao() {
-        document.getElementById("tela-edicao").style.display = "flex";
-        carregarDadosUsuario();
-    }
-
-    function fecharTelaEdicao() {
-        document.getElementById("tela-edicao").style.display = "none";
-    }
-
-    async function carregarDadosUsuario() {
-        const response = await fetch("../controller/get-user-info.php");
-        const usuario = await response.json();
-
-        document.getElementById("nome-usuario").value = usuario.nome;
-        document.getElementById("data-nascimento-usuario").value = usuario.data_nascimento;
-        document.getElementById("rg-usuario").value = usuario.rg;
-        document.getElementById("cpf-usuario").value = usuario.cpf;
-        document.getElementById("estado-civil-usuario").value = usuario.estado_civil;
-        document.getElementById("deficiencia-usuario").value = usuario.deficiencia;
-        document.getElementById("especificacao-usuario").value = usuario.especificacao;
-        document.getElementById("sexo-usuario").value = usuario.sexo;
-    }
-</script>
--->
-
-<!-- get-user-info.php no controller
- 
-<?php
-include("../model/connect.php");
-
-// Obtém o ID do usuário logado
-$cod_usuario = $_COOKIE['idUsuario'];
-
-$query = "SELECT * FROM usuario WHERE id = ?";
-$stmt = $connect->prepare($query);
-$stmt->bind_param("i", $cod_usuario);
-$stmt->execute();
-$result = $stmt->get_result();
-
-if ($result->num_rows > 0) {
-    echo json_encode($result->fetch_assoc());
-} else {
-    echo json_encode(["error" => "Usuário não encontrado."]);
-}
-?> -->
-
-<!-- update-user.php
- 
-<?php
-include("../model/connect.php");
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $cod_usuario = $_COOKIE['idUsuario'];
-
-    $nome = $_POST['nome'];
-    $data_nascimento = $_POST['data_nascimento'];
-    $rg = $_POST['rg'];
-    $cpf = $_POST['cpf'];
-    $estado_civil = $_POST['estado_civil'];
-    $deficiencia = $_POST['deficiencia'];
-    $especificacao = $_POST['especificacao'];
-    $sexo = $_POST['sexo'];
-
-    $query = "UPDATE usuario SET nome = ?, data_nascimento = ?, rg = ?, cpf = ?, estado_civil = ?, deficiencia = ?, especificacao = ?, sexo = ? WHERE id = ?";
-    $stmt = $connect->prepare($query);
-    $stmt->bind_param("ssssssssi", $nome, $data_nascimento, $rg, $cpf, $estado_civil, $deficiencia, $especificacao, $sexo, $cod_usuario);
-
-    if ($stmt->execute()) {
-        echo json_encode(["status" => "success", "message" => "Dados atualizados com sucesso!"]);
-    } else {
-        echo json_encode(["status" => "error", "message" => "Erro ao atualizar os dados."]);
-    }
-}
-?>
--->
 
     <div class="pessoal-info" id="pessoal-info">
         <form action="" method="POST">
@@ -197,19 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="radio" name="sex" id="Pre" value="Prefiro não dizer" class="radio4us">
             <label for="Pre" class="txt_rd4_us">Prefiro não dizer</label><br>
 
-            <button type="submit" name="btnCadastro" class="btncd" style="    
-               background-color:#01E581;
-               color: #fff;
-               width:15rem;
-               height: 3rem;
-               border-radius:8px;
-               font-size: 2rem;
-               display: flex;
-               align-items:center;
-               justify-content: center;
-               margin-top:26rem;
-               margin-left: 50rem;
-               border: 0.8px solid  rgba(0,0,0,0.3)">Alterar</button>
+            <button type="submit" name="btnCadastro" class="btnAlterar" id="um">Alterar</button>
         </form>
     </div>
 
@@ -237,19 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p id="lblus29">Tipo de Residencia</p>
             <input type="text" class="inputtipUS" name="TPR">
 
-            <button type="submit" name="btnCadastro2" class="btncd2" style="    
-               background-color:#01E581;
-               color: #fff;
-               width:15rem;
-               height: 3rem;
-               border-radius:8px;
-               font-size: 2rem;
-               display: flex;
-               align-items:center;
-               justify-content: center;
-               margin-top:19rem;
-               margin-left: 27rem;
-               border: 0.8px solid  rgba(0,0,0,0.3)">Alterar</button>
+            <button type="submit" name="btnCadastro2" class="btnAlterar" id="dois">Alterar</button>
         </form>
     </div>
 
@@ -266,19 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p id="lblus25">Email</p>
             <input type="text" class="inputemailUS" name="CEP">
 
-            <button type="submit" name="btnCadastro2" class="btncd2" style="    
-               background-color:#01E581;
-               color: #fff;
-               width:15rem;
-               height: 3rem;
-               border-radius:8px;
-               font-size: 2rem;
-               display: flex;
-               align-items:center;
-               justify-content: center;
-               margin-top:19rem;
-               margin-left: 27rem;
-               border: 0.8px solid  rgba(0,0,0,0.3)">Alterar</button>
+            <button type="submit" name="btnCadastro2" class="btnAlterar" id="tres" onclick="funcaoAbrir3()">Alterar</button>
         </form>
     </div>
 
@@ -289,33 +106,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <p>Configurar seu Curriculo</p>
 
-        <button type="submit" name="btnCadastro2" class="btncd2" onclick="funcaoAbrir()" style="    
-               background-color:#01E581;
-               color: #fff;
-               width:22rem;
-               height: 5rem;
-               border-radius:8px;
-               font-size: 2rem;
-               display: flex;
-               align-items:center;
-               justify-content: center;
-               margin-top:3rem;
-               margin-left: 12rem;
-               border: 0.8px solid  rgba(0,0,0,0.3)">Criar</button>
+        <button type="submit" name="btnCadastro2" class="btnCurriculoES" id="criar"
+            onclick="funcaoAbrir()">Criar</button>
 
-        <button type="submit" name="btnCadastro2" class="btncd2" onclick="funcaoAbrir2()" style="    
-               background-color:#01E581;
-               color: #fff;
-               width:22rem;
-               height: 5rem;
-               border-radius:8px;
-               font-size: 2rem;
-               display: flex;
-               align-items:center;
-               justify-content: center;
-               margin-top:3rem;
-               margin-left: 38rem;
-               border: 0.8px solid  rgba(0,0,0,0.3)">Alterar</button>
+        <button type="submit" class="btnCurriculoES" id="alterar" onclick="funcaoAbrir2()">Alterar</button>
     </div>
 
     <div id="container-geral" class="container-create-curriculo">
@@ -347,72 +141,88 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="submit" class="btnCurriculo" value="Criar Currículo">
         </form>
     </div>
+    <?php include("../controller/update-curriculo.php") ?>
 
-    <?php
-    include("../model/connect.php");
+        <div class="container-geral3" id="container-geral3">
+        <button type='submit' class='btnCloseCur bi bi-x' id='btnClose3'
+        style='color: lightgreen; font-size: 30px;'></button>
+            <form action='../controller/atualizarInfo.php'>
+            <div class="pessoal-info" id="pessoal-info">
+                <p id="lblus5">Estado Cívil</p>
+                <select class="cmbbxus1" name="Estado_civil">
+                    <option value="S">Solteiro</option>
+                    <option value="C">Casado</option>
+                    <option value="V">Viúvo</option>
+                    <option value="SP">Separado</option>
+                    <option value="D">Divorciado</option>
+                </select>
 
-    // Verifica se o usuário está logado
-    if (!isset($_COOKIE['idUsuario'])) {
-        die("Erro: Usuário não está logado.");
-    }
+                <p id="lblus6">Possui algum tipo de deficiência?</p>
+                <select class="cmbbxus2" name="def">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                <p id="lblus7">Especifique</p>
+                <input type="text" class="inputespecus" name="espec">
 
-    // Obtém o ID do usuário logado
-    $cod_usuario = $_COOKIE['idUsuario'];
+                <p id="lblus8">Sexo</p>
+                <input type="radio" name="sex" id="Mas" value="Masculino" class="radious">
+                <label for="Mas" class="txt_rd_us">Masculino</label>
+                <input type="radio" name="sex" id="Fem" value="Feminino" class="radio2us">
+                <label for="Fem" class="txt_rd2_us">Feminino</label>
+                <input type="radio" name="sex" id="Out" value="Outro" class="radio3us">
+                <label for="Out" class="txt_rd3_us">Outro</label>
+                <input type="radio" name="sex" id="Pre" value="Prefiro não dizer" class="radio4us">
+                <label for="Pre" class="txt_rd4_us">Prefiro não dizer</label><br>
+                </div>
 
-    // Busca o currículo do usuário no banco de dados
-    $query_curriculo = "SELECT 
-    objetivo_curriculo, 
-    historico_profissional_curriculo, 
-    formacao_academica_curriculo, 
-    habilidade_e_competencias_curriculo 
-    FROM curriculo WHERE cod_usuario = ?";
-    $stmt = $connect->prepare($query_curriculo);
-    $stmt->bind_param("i", $cod_usuario);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $curriculo = $result->fetch_assoc();
+                <div class="pessoal-ende" id="pessoal-ende">
+                <p id="lblus21">Cidade</p>
+                <input type="text" class="inputcidUS" name="CID">
+                <p id="lblus22">Rua</p>
+                <input type="text" class="inputruaUS" name="RUA">
 
-    // Verifica se o currículo existe
-    if (!$curriculo) {
-        die("Erro: Nenhum currículo encontrado para este usuário.");
-    }
+                <p id="lblus23">Bairro</p>
+                <input type="text" class="inputbrUS" name="BAI">
+                <p id="lblus24">Número</p>
+                <input type="text" class="inputnumUS" name="NUM">
+                <p id="lblus25">CEP</p>
+                <input type="text" class="inputcepUS" name="CEP">
 
-    ?>
+                <p id="lblus26">Ponto de referencia</p>
+                <input type="text" class="inputrefUS" name="REF">
+                <p id="lblus27">Tempo de residencia</p>
+                <input type="text" class="inputtempUS" name="TEM">
 
-    <div id="container-geral2" class="container-create-curriculo">
-        <button type="submit" class="btnCloseCur bi bi-x" id="btnClose2"
-            style="color: lightgreen; font-size: 30px;"></button>
-        <form action="../controller/atualizar-curriculo.php" method="POST">
-        <?php include("../controller/select-top-curriculo.php") ?>
+                <p id="lblus28">Valor da Residencia(R$)</p>
+                <input type="text" class="inputvlrUS" name="VLR">
+                <p id="lblus29">Tipo de Residencia</p>
+                <input type="text" class="inputtipUS" name="TPR">
+        </div>
 
-            <label for="objetivo">
-                <h2>Objetivo:</h2>
-            </label><br>
-            <textarea id="objetivo" class="conteudo-curriculo" name="objetivo"
-                required><?= htmlspecialchars($curriculo['objetivo_curriculo']) ?></textarea><br><br>
+    <div class="pessoal-outros-dados" id="pessoal-outros-dados">
+            <p id="lblus21">Telefone para Contato</p>
+            <input type="text" class="inputcidUS" name="CID">
+            <p id="lblus22">Telefone para Recado</p>
+            <input type="text" class="inputruaUS" name="RUA">
 
-            <label for="historico" class='cur'>
-                <h2>Histórico Profissional:</h2>
-            </label><br>
-            <textarea id="historico" class="conteudo-curriculo" name="historico"
-                required><?= htmlspecialchars($curriculo['historico_profissional_curriculo']) ?></textarea><br><br>
+            <p id="lblus23">CAD Único</p>
+            <input type="text" class="inputbrUS" name="BAI">
 
-            <label for="formacao" class='cur'>
-                <h2>Formação Acadêmica:</h2>
-            </label><br>
-            <textarea id="formacao" class="conteudo-curriculo" name="formacao"
-                required><?= htmlspecialchars($curriculo['formacao_academica_curriculo']) ?></textarea><br><br>
+            <p id="lblus25">Email</p>
+            <input type="text" class="inputemailUS" name="CEP">
 
-            <label for="habilidades" class='cur'>
-                <h2>Habilidades/Competências:</h2>
-            </label><br>
-            <textarea id="habilidades" name="habilidades" class="conteudo-curriculo"
-                required><?= htmlspecialchars($curriculo['habilidade_e_competencias_curriculo']) ?></textarea><br><br>
+            <p id="lblus21">Telefone para Contato</p>
+            <input type="text" class="inputcidUS" name="CID">
+            <p id="lblus22">Telefone para Recado</p>
+            <input type="text" class="inputruaUS" name="RUA">
 
-            <input type="submit" class="btnCurriculo" value="Atualizar Currículo">
-        </form>
+            <p id="lblus23">CAD Único</p>
+            <input type="text" class="inputbrUS" name="BAI">
+
+            <p id="lblus25">Email</p>
+            <input type="text" class="inputemailUS" name="CEP">
     </div>
-
     <script>
 
         const links = document.querySelectorAll('.nav-user a');
