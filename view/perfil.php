@@ -7,10 +7,9 @@
     <a>Endereço</a>
     <a>Outros Dados</a>
     <a>Currículo</a>
-    <button class="btn-editar-tudo" onclick="abrirTelaEdicao()">Editar Todas as Informações</button>
 </nav>
-
-<!-- <div id="tela-edicao" class="tela-edicao" style="display: none;">
+<!-- 
+ <div id="tela-edicao" class="tela-edicao" style="display: none;">
     <form id="form-edicao-usuario" method="POST">
         <h2>Editar Informações</h2>
 
@@ -58,30 +57,11 @@
 </div>
  -->
 
- <!-- css popup
-  .tela-edicao {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tela-edicao form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
- -->
 
- <!-- js abrir e fecharTelaEdicao
+
+
   
- <script>
+ <!-- <script>
     function abrirTelaEdicao() {
         document.getElementById("tela-edicao").style.display = "flex";
         carregarDadosUsuario();
@@ -104,59 +84,8 @@
         document.getElementById("especificacao-usuario").value = usuario.especificacao;
         document.getElementById("sexo-usuario").value = usuario.sexo;
     }
-</script>
--->
+</script> -->
 
-<!-- get-user-info.php no controller
- 
-<?php
-include("../model/connect.php");
-
-// Obtém o ID do usuário logado
-$cod_usuario = $_COOKIE['idUsuario'];
-
-$query = "SELECT * FROM usuario WHERE id = ?";
-$stmt = $connect->prepare($query);
-$stmt->bind_param("i", $cod_usuario);
-$stmt->execute();
-$result = $stmt->get_result();
-
-if ($result->num_rows > 0) {
-    echo json_encode($result->fetch_assoc());
-} else {
-    echo json_encode(["error" => "Usuário não encontrado."]);
-}
-?> -->
-
-<!-- update-user.php
- 
-<?php
-include("../model/connect.php");
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $cod_usuario = $_COOKIE['idUsuario'];
-
-    $nome = $_POST['nome'];
-    $data_nascimento = $_POST['data_nascimento'];
-    $rg = $_POST['rg'];
-    $cpf = $_POST['cpf'];
-    $estado_civil = $_POST['estado_civil'];
-    $deficiencia = $_POST['deficiencia'];
-    $especificacao = $_POST['especificacao'];
-    $sexo = $_POST['sexo'];
-
-    $query = "UPDATE usuario SET nome = ?, data_nascimento = ?, rg = ?, cpf = ?, estado_civil = ?, deficiencia = ?, especificacao = ?, sexo = ? WHERE id = ?";
-    $stmt = $connect->prepare($query);
-    $stmt->bind_param("ssssssssi", $nome, $data_nascimento, $rg, $cpf, $estado_civil, $deficiencia, $especificacao, $sexo, $cod_usuario);
-
-    if ($stmt->execute()) {
-        echo json_encode(["status" => "success", "message" => "Dados atualizados com sucesso!"]);
-    } else {
-        echo json_encode(["status" => "error", "message" => "Erro ao atualizar os dados."]);
-    }
-}
-?>
--->
 
     <div class="pessoal-info" id="pessoal-info">
         <form action="" method="POST">

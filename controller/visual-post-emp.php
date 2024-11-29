@@ -22,8 +22,7 @@ while ($exibe = mysqli_fetch_array($query)) {
                     </a>
                 </div>
                 <div class='data-post'>$exibe[2], $exibe[3]</div>
-                <button type='submit' id='follow' value='0' function='' name='btnFollow'
-                    class='btnFollow'>Seguir</button>
+               
             </div>
             <div class='conteudo-post'>$exibe[4]</div>
             <div class='center-post'>";
@@ -36,7 +35,7 @@ while ($exibe = mysqli_fetch_array($query)) {
 
     echo "  </div>
             <div class='footer-post'>
-                <button type='submit' name='btnLike' id='like' value='0' onclick='mudarCor(this)' class='btnLike'><i class='bi bi-heart-fill'></i></button>
+                
             </div>
         </div> <!-- Div content-post -->
     </div>  <!-- Div center -->

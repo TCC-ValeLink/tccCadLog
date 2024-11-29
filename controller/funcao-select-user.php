@@ -15,7 +15,7 @@ if (isset($_COOKIE['idUsuario'])) {
 <img src='../view/imgs-foto-perfil-user/$exibe[0]' class='perfiluser'>
 <p class='nomeuser'>$exibe[1]</p>
 <div class='funcaoicon'><i class='bi bi-code-slash'></i></div>
-<p class='funcaouser'>Programador Mobile</p>
+<p class='funcaouser'>Engenheiro Civil</p>
 <div class='edituser'><i class='bi bi-pencil-square'></i></div>
 <p class='editusertxt'>Aqui você pode rever ou alterar suas informações pessoais...</p>
 </div>";
