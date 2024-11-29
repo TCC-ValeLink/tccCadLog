@@ -1,0 +1,35 @@
+<!-- Botão para abrir o formulário -->
+<button id="btnAbrirForm" onclick="document.getElementById('formContainer').style.display = 'block';">
+    Editar Informações
+</button>
+
+<!-- Formulário com estilização -->
+<div id="formContainer" style="display: none; margin-left: 30vw; padding: 20px; width: 60vw; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <form action="../controller/atualizar-empresa.php" method="POST">
+        <h2 style="text-align: center; margin-bottom: 20px;">Editar Informações da Empresa</h2>
+
+        <!-- Container para dividir os campos em duas colunas -->
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <?php foreach ($empresa as $campo => $valor): ?>
+                <div style="flex: 1 1 calc(50% - 20px);">
+                    <label for="<?= $campo; ?>" style="display: block; font-weight: bold; margin-bottom: 5px;">
+                        <?= ucfirst(str_replace("_", " ", $campo)); ?>:
+                    </label>
+                    <input 
+                        type="text" 
+                        id="<?= $campo; ?>" 
+                        name="<?= $campo; ?>" 
+                        value="<?= htmlspecialchars($valor); ?>" 
+                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"
+                        <?= $campo === 'cod_empresa' ? 'readonly' : ''; ?>
+                    >
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+        <!-- Botão de envio -->
+        <button type="submit" style="margin-top: 20px; float: right; background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            Salvar Alterações
+        </button>
+    </form>
+</div>
